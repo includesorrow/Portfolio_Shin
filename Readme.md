@@ -36,9 +36,7 @@
 
 ## Programming Language
 ### Python
-  [Flask](https://github.com/includesorrow/KOSTA/tree/master/Python/0410%20(7%EC%9D%BC%EC%B0%A8)
-  1. [Flask](https://github.com/includesorrow/KOSTA/tree/master/Python/0410%20(7%EC%9D%BC%EC%B0%A8/)
-  
+  1. [Flask](https://github.com/includesorrow/Portfolio_Shin/tree/master/Data/Python/Flask)
   2. [Pandas]
   3. [Numpy]
   4. [Matplotlib]
