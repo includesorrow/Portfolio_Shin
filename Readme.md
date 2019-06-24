@@ -35,6 +35,7 @@
 - 전화번호 : 010-5164-7769
 
 ## Programming Language
+- 코드 확인은 해당 버튼을 누르시면 됩니다.
 ### Python
   1. [Flask](https://github.com/includesorrow/Portfolio_Shin/tree/master/Data/Python/Flask)
   2. [Pandas]
