@@ -35,10 +35,9 @@
 - 전화번호 : 010-5164-7769
 
 ## Programming Language
+- 코드 확인은 해당 버튼을 누르시면 됩니다.
 ### Python
-  [Flask](https://github.com/includesorrow/KOSTA/tree/master/Python/0410%20(7%EC%9D%BC%EC%B0%A8)
-  1. [Flask](https://github.com/includesorrow/KOSTA/tree/master/Python/0410%20(7%EC%9D%BC%EC%B0%A8/)
-  
+  1. [Flask](https://github.com/includesorrow/Portfolio_Shin/tree/master/Data/Python/Flask)
   2. [Pandas]
   3. [Numpy]
   4. [Matplotlib]
