@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webflow-project-description>
+	<version>1</version>
+	<pluginVersion><![CDATA[3.9.7.201812201020-RELEASE]]></pluginVersion>
+	<configs>
+		<config>
+			<file>src/hello.xml</file>
+			<name><![CDATA[beans]]></name>
+		</config>
+		<config>
+			<file>src/ex1/hello.xml</file>
+			<name><![CDATA[hello]]></name>
+		</config>
+	</configs>
+</webflow-project-description>

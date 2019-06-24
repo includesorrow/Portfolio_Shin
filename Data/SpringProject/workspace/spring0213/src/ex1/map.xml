@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- 해보기 : Ex1_Main 만들어서 map2를 getBean으로 불러내어서 맵의 값을 키와 값으로 출력하기. -->
+
+	<bean id="map1" class="ex1.Ex2_Map" abstract="true">
+		<property name="map">
+			<map>
+				<entry key="seoul" value="50000" />
+				<entry key="inchun" value="30000" />
+				<entry key="jeju" value="150000" />
+			</map>
+		</property>
+	</bean>
+	<bean id="map2" parent="map1">
+		<property name="map">
+			<map merge="true">
+				<entry key="busan" value="190000" />
+			</map>
+		</property>
+	</bean>
+	
+	<!-- Ex3_Main 만들어서 Scanner 메세지를 받아서 hi라고 치면 hello가 답변되도록 모듈 만들기 -->
+	
+	<bean id="prop" class="ex1.Ex3_Prop" abstract="true">
+		<property name="prop">
+			<props>
+				<prop key="hi">hello</prop>
+				<prop key="ok">yes</prop>
+				<prop key="bye">see u again</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="propBean" parent="prop">
+		<property name="prop">
+			<props merge="true">
+				<prop key="good">oh! good</prop>
+				<prop key="ready">gogogo</prop>
+			</props>
+		</property>
+	</bean>
+</beans>

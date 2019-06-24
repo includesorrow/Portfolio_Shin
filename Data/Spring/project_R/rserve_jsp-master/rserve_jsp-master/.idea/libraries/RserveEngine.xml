@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="RserveEngine">
+    <CLASSES>
+      <root url="jar:///Library/Frameworks/R.framework/Resources/library/Rserve/libs/RserveEngine.jar!/" />
+      <root url="jar:///Library/Frameworks/R.framework/Resources/library/Rserve/libs/REngine.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

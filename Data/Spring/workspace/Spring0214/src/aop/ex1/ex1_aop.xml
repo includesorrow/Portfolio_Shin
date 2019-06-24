@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+<context:annotation-config/>
+<bean id="myPublic" class="aop.ex1.MyPublic"></bean>
+<!-- Advice -->
+<bean id="checkAdvice" class="aop.ex1.CheckAdvice"></bean>
+<bean id="afterAdvice" class="aop.ex1.NameReturnAdvice"></bean>
+<bean id="afterthrowAdvice" class="aop.ex1.AfterThrowAdvice"></bean>
+<bean id="beforeAdvice" class="aop.ex1.TodayBeforeAdvice"></bean>
+<!-- AOP 설정 : ProxyFactoryBean 캡슐화!! -->
+<aop:config>
+	<aop:aspect id="time" ref="checkAdvice">
+	<!-- aspect라고는 하지만 사실은 어드바이저 -->
+		<aop:pointcut
+			expression="execution (* aop.ex1.DaoImple.first())"
+			id="firstP" />
+		<aop:around method="checkTime" pointcut-ref="firstP"></aop:around>
+		
+	</aop:aspect> 
+	 
+	<aop:aspect id="afterReturn" ref="afterAdvice">
+		<aop:pointcut expression="execution(* aop.ex1.DaoImple.second())"
+			id="secondP"></aop:pointcut>
+		<aop:after-returning method ="myReturnMethod"
+			pointcut-ref="secondP" returning="ret"/>
+	</aop:aspect>
+	<aop:aspect id="afterThrow" ref="afterthrowAdvice">
+		<aop:pointcut expression="execution(* aop.ex1.DaoImple.third())"
+		 id="ThridP"/>
+		 <aop:after-throwing method="commThrow"
+		 pointcut-ref="ThridP" throwing="ew"/>
+	</aop:aspect>
+	<aop:aspect id="before" ref="beforeAdvice">
+		<aop:pointcut 	
+			expression="execution(* aop.ex1.DaoImple.*())"
+			 id="befP"/>
+		<aop:before method="beforeToday" pointcut-ref="befP"></aop:before>
+	</aop:aspect>
+	 
+	
+</aop:config>
+<!-- Target -->
+<bean id="dao" class="aop.ex1.DaoImple"></bean>
+
+<!-- aspect라고는 하지만 사실은 어드바이저
+돼지코 : 인자가 있든 없든 전부 포함시킴 -->
+</beans>

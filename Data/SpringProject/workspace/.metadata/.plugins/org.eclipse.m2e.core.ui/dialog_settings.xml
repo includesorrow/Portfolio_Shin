@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item value="480" key="width"/>
+		<item value="720" key="x"/>
+		<item value="167" key="y"/>
+		<item value="530" key="height"/>
+	</section>
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="Middle_Project"/>
+			<item value="spring0304"/>
+			<item value="spring0226"/>
+			<item value="spring0222"/>
+			<item value="homework0221"/>
+			<item value="spring0221"/>
+			<item value="spring0219"/>
+			<item value="springhomwork0218"/>
+			<item value="spring0218"/>
+			<item value="spring0215"/>
+			<item value="spring0214"/>
+			<item value="spring0213"/>
+			<item value="spring0212"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="Middle_Project"/>
+			<item value="spring0304"/>
+			<item value="spring0226"/>
+			<item value="spring0222"/>
+			<item value="homework0221"/>
+			<item value="spring0221"/>
+			<item value="spring0219"/>
+			<item value="springhomwork0218"/>
+			<item value="spring0218"/>
+			<item value="spring0215"/>
+			<item value="spring0214"/>
+			<item value="spring0213"/>
+			<item value="spring0212"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="exam2">
+	<select id="iftest1" parameterType="hashmap" resultType="svo">
+		select * from sawon
+		<!-- where 
+			조건1) saname saname like '%' || #{saname} || '%' 
+			조건2) and sajob = #{sajob} 
+			조건1 만족할 때는 이상 없지만 조건2만 만족할 때는 and가 문제가 된다. <where> 이유가 여기 있다. 
+			where 기능 : where절 추가한 다음에 바로 and, or 같은 연산자가 붙으면 선별해서 삭제한다.
+			where sajob = #{sajob} 형태가 된다. dynamicExample2.jsp의 검색폼에서 sajob을 추가 -->
+		<where>
+			<if test="saname != null and saname != ''">
+				saname like '%' || #{saname} || '%'
+			</if>
+			<if test="sajob != null and sajob !=''">
+				and sajob = #{sajob}
+			</if>
+		</where>
+		order by 1 asc
+	</select>
+</mapper>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow xmlns="http://www.springframework.org/schema/webflow"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/webflow
+        http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd">
+
+<!-- 해보기 : EX2_main으로 만들어서 map2를 getBean으로 불러내어서 맵의 값을 /키와 값으로 출력하기 -->
+
+
+<bean id="map1" class="ex1.Ex2_Map" abstract="true">
+	<property name = "map">
+		<map> 
+			<entry key = "seoul" value="50000"/>
+			<entry key = "inchun" value="30000"/>
+			<entry key = "jeju" value="150000"/>		
+		</map>
+	</property>
+
+</bean>
+<bean id = "map2" parent="map1">
+	<property name = "map">
+		<map merge="ture">
+		<entry key="busan" value="190000"/>
+		
+		</map>
+	</property>
+
+</bean>
+
+
+	<view-state id="start">
+	</view-state>
+
+
+
+
+</flow>

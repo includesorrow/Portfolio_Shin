@@ -1,0 +1,30 @@
+package exam;
+
+
+public class ExamBeanImple implements ExamBeanInter{
+
+	private ExamTypeInter eti;
+
+ 
+	
+	
+	
+//	public class ProductServiceImple implements ProductService {
+//
+//		private ProductDao productDao;
+//		
+//		@Override
+//		public ProductVO getProduct() {
+//			return productDao.getProduct();
+//		}
+//
+//		public ProductDao getProductDao() {
+//			return productDao;
+//		}
+//
+//		public void setProductDao(ProductDao productDao) {
+//			this.productDao = productDao;
+//		}
+
+	
+}

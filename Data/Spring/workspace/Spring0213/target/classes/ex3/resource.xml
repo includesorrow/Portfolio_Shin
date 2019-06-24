@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+<context:annotation-config></context:annotation-config>
+
+<bean id="msg" class="java.lang.String">
+<constructor-arg value="오늘은 17의 목요일!!!!!!"></constructor-arg>
+</bean>
+<bean id="msg2" name="myMsg" class="java.lang.String">
+<!-- myMsg를 지정해서 bean id=msg이여도 name=myMsg를 지정한 값이 먼저 출력이 된다. -->
+<constructor-arg value="오늘은 18의 금요일 불타는밤!!!!!"></constructor-arg>
+</bean>
+<bean id="res" class="ex3.Ex2_ResourceService"></bean>
+
+</beans>

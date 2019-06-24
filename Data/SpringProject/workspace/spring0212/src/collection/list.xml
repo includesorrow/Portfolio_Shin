@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="list1" class="collection.Ex1_List">
+		<property name="items">
+			<list>
+				<value>Spring 3.0</value>
+				<value>Spring 4.0</value>
+				<value>Spring 5.0</value>
+			</list>
+		</property>
+	</bean>
+	<!-- list2 실수를 가진 리스트를 넣어봅시다. -->
+	<bean id="listf" class="java.util.ArrayList">
+		<constructor-arg>
+			<array>
+				<value>123.5</value>
+				<value>122.3</value>
+				<value>113.7</value>
+			</array>
+		</constructor-arg>
+	</bean>
+	<bean id="list2" class="collection.Ex1_List">
+		<property name="itemsf" ref="listf" />
+	</bean>
+</beans>

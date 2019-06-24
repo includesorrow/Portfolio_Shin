@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="image">
+	<insert id="Imgin" parameterType="ivo">
+		insert into image_info values(image_info_seq.nextval(),#{ilabel},sysdate,#{ifile})
+	</insert>
+	<select id="recentImg" resultType="ivo">
+select rownum,ibun,ilabel, idate, ifile from 
+(select * from image_info order by ibun desc) where rownum in (1,2,3,4,5)
+	</select>
+
+	<select id="imagechk" parameterType="ivo" resultType="int">
+		select count(*) from image_info where ifile=#{ifile}
+	</select>
+
+
+</mapper>

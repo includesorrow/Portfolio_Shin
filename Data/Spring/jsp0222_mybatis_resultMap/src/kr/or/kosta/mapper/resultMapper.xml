@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="result1">
+
+	<select id="deptList" resultType="DeptVO">
+		select * from sawon_phone order by pnum
+	</select>
+	
+	<select id="sawonList" resultType="SawonVO">
+	
+		select * from sawon_phone order by pnum
+	</select>
+
+
+	<!--  1번 예제 -->
+<!-- 	<resultMap type="dvo" id="deptResultMap"> -->
+<!-- 	    <id column="deptno" javaType="int" property="deptno"/> -->
+<!-- 		<result column="location" property="loc"/> -->
+<!-- 	</resultMap> -->
+<!-- 	<select id="showDept" resultMap="deptResultMap"> -->
+<!-- 		select deptno, dname, loc as location from dept -->
+<!-- 		order by 1 desc -->
+<!-- 	</select> -->
+	
+	
+	
+</mapper>  

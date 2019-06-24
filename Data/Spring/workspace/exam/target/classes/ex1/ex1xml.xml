@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="hello" class="ex1.Ex1_Bean">
+<property name="msg" value="하이하이"></property>
+<!-- set String msg -->
+
+<!-- 컨스트럭터도 있다. -->
+<!-- msg 자동으로 나오는 이유는 setter에서 자동으로 떠와준다. -->
+</bean>
+
+
+
+</beans>

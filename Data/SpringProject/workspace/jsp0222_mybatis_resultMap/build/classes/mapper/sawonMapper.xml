@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="sawon">
+	<insert id="deptAdd" parameterType="dvo">
+		insert into dept 
+				values(dept_seq.nextVal,#{dname},#{loc})
+	</insert>
+	<select id="deptList" resultType="dvo">
+		select deptno,dname,loc from dept order by deptno desc
+	</select>
+	<delete id="deptDel" parameterType="int">
+		delete from dept where deptno=#{num}
+	</delete>
+	<!-- 부서명 중복확인 -->
+	<select id="findDname" parameterType="String" resultType="int">
+	select count(*)  cnt  from dept where dname=#{dname}
+	</select>
+	
+	
+	<select id="sawonList" resultType="svo">
+		select sabun,saname,deptno,gender,to_char(sahire,'yyyy-mm-dd')
+		sahire from sawon order by 1 desc
+	</select>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</mapper>  

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="image">
+	<insert id="Imgin" parameterType="ivo">
+		insert into image_info values(image_info_seq.nextval,#{ilabel},#{ifile},sysdate)
+	</insert>
+	<select id="recentImg" resultType="ivo">
+		select rownum,ibun,ilabel,idate,ifile from (
+		select * from image_info order by ibun desc) where rownum in (1,2,3,4,5)
+		<!-- 최신의 이미지 5개만 가져오기 위해서 인라인뷰와 함께 rownum을 사용해서 최신 5개의 이미지를 받아오는 select 구문 -->
+	</select>
+	<select id="imagechk" parameterType="ivo" resultType="int">
+		select count(*) from image_info where ifile = #{ifile}
+		<!--  이미지파일의 이름이 겹칠 경우를 대비해서 겹치면 1 안겹치면 0을 반환하는 select 구문 -->
+	</select>
+
+</mapper>

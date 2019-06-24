@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="name1" class="java.lang.String" >
+<!-- java.lang.String = String class -->
+<constructor-arg>
+	<value>홍길동</value>
+</constructor-arg>
+</bean>
+
+<bean id="price" class="java.lang.Integer" >
+<!-- java.lang.String = String class -->
+<constructor-arg>
+	<value type="int">1000</value>
+</constructor-arg>
+</bean>
+
+<bean id="pvo" class="ex2.Domain_ProductVO">
+	<property name="name" ref="name1"></property>
+	<property name="price" ref="price"></property>
+<!-- 의존성 주입 -->
+<!-- p 접두어를 사용해서 setter를 호출
+	ProductDaoImple와 ProductVO의 의존관계 = DI -->
+
+</bean>
+
+<bean id="serviceproductdao"
+class = "ex2.Dao_ProductDaoImple"
+p:productvo-ref="pvo">
+<!-- ref => has a 관계인데, 컨테이너안에서는 ref를 사용해서 (di)의존성 주입 -->
+</bean>
+
+<!-- 싱글톤 설정 완료 -->
+
+<!-- Service -->
+<bean id="productService"
+class="ex2.Service_ProductServiceImple">
+<property name="serviceproductdao" ref="serviceproductdao"></property>
+</bean>
+
+
+</beans>

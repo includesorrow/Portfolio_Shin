@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="exam1">
+  <!-- 1) case1 if문이 필요한 이유
+  		    만약에 if문으로 동적 쿼리를 처리 하지 않았을 때는
+  		  전체 데이터를 보여주는 Query와
+  		  사원의 이름을 보여주는 Query에 필요한 select문이 2개가 존재   	   -->
+  <select id="iftest1" parameterType="hashmap"
+  	resultType="svo">
+  		select * from sawon
+  		<!-- where
+  			조건1) saname saname like '%' || #{saname} || '%'
+  			조건2) and sajob = #{sajob}
+  			조건 1 만족할 때는 and가 문제가 된다.
+  			<WHERE> 이유가 여기에 있다.
+  			where 기능 : where절 추가한 다음에 바로 and, or 같은 연산자가
+  			붙으면 선별해서 삭제한다.
+  			where sajob = #{sajob} 형태가 된다.
+  			dynamicExample2.jsp에서 검색 폼에서 sajob을 추가
+  			 -->
+  			 
+  			 
+  	<where>
+  		<if test ="saname != null and saname !=''">
+  			saname like '%' || #{saname} || '%'
+  		</if>
+  		<if test="sajob != null and sajob !=''">
+  			and sajob = #{sajob}
+  		</if>
+  	
+  	</where>
+  	order by 1 desc
+  	</select>
+  
+  
+  
+  </mapper>

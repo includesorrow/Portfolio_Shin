@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+<context:annotation-config></context:annotation-config>
+
+<!-- target 빈 만들기 -->
+<bean id="target" class="ex5.MyBeanImple"></bean>
+<!-- Advice 빈 만들기 -->
+<bean id="loggerBeforeAdvice" class="ex5.MyBeanBeforeAdvice"></bean>
+<bean id="loggerAfterAdvice" class="ex5.MyAfterAdvice"></bean>
+<!-- execution(리턴타입, 패키지경로, 클래스명, 메서드명, 매개변수 * kr.or.kost.mvc.."Imple.*(..)
+	() -> 인자가 하나도 없는 메서드만 지칭
+	(..) -> 인자가 없거나 하나 이상인 메서드 => 모든 메서드
+
+-->
+
+
+<bean id="loggerPointCut"
+	class="org.springframework.aop.aspectj.AspectJExpressionPointcut">
+		<property name="expression" value="execution(* myGet*(..))"></property>
+	</bean>
+
+
+
+
+
+<bean id="loggerAfterAdvisor"
+class="org.springframework.aop.support.DefaultPointcutAdvisor">
+	<property name="advice" ref="loggerAfterAdvice"></property>
+	<property name="pointcut" ref="loggerPointCut"></property>
+</bean>
+<bean id="loggerAdvisor"
+class="org.springframework.aop.support.DefaultPointcutAdvisor">
+
+<property name="advice" ref="loggerBeforeAdvice"></property>
+<property name="pointcut" ref="loggerPointCut"></property>
+</bean>
+
+<bean id="pfBean"
+	class="org.springframework.aop.framework.ProxyFactoryBean">
+	<property name="target" ref="target"></property>
+	<property name="interceptorNames">
+	<!-- 이 변수안에 getter setter 있을껀데 advisor 객체이름 변수명을 집어 넣으면 그게 알아서 들어감. add advisor되는것임. -->
+	<list>
+		<value>loggerAdvisor</value>
+		<value>loggerAfterAdvisor</value>
+	</list>
+	</property>
+	</bean>
+
+
+<!-- 일반객체를BEAN으로만듬 -->
+
+<!--  다 따로 노는데 그걸 관리해주는 얘가 프록시 팩토리 빈이다. -->
+<!-- EXECUTION이해 해야함 
+얘로인해서 ADVISER가 관리되어있다.
+(..) < 모든메서드, () 인자가 없는 메서드만 적용-->
+</beans>
