@@ -38,9 +38,9 @@
 - 코드 확인은 해당 버튼을 누르시면 됩니다.
 ### Python
   1. [Flask](https://github.com/includesorrow/Portfolio_Shin/tree/master/Data/Python/Flask)
-  2. [Pandas]
-  3. [Numpy]
-  4. [Matplotlib]
+  2. [Pandas](https://github.com/includesorrow/Portfolio_Shin/tree/master/Data/Python/Pandas%2CNumpy%2CMatplotlib)
+  3. [Numpy](https://github.com/includesorrow/Portfolio_Shin/tree/master/Data/Python/Pandas%2CNumpy%2CMatplotlib)
+  4. [Matplotlib](https://github.com/includesorrow/Portfolio_Shin/tree/master/Data/Python/Pandas%2CNumpy%2CMatplotlib)
 
 ### R
   1. [ggplot2]
