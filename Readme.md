@@ -35,7 +35,8 @@
 - 전화번호 : 010-5164-7769
 
 ## Programming Language
-- 코드 확인은 해당 버튼을 누르시면 됩니다.
+- 수업 및 개인적으로 기초부터 공부한 내용들을 정리한 파일입니다.
+- 코드 확인은 해당 버튼을 누르시면 확인 가능합니다.
 ### Python
   1. [Flask](https://github.com/includesorrow/Portfolio_Shin/tree/master/Data/Python/Flask)
   2. [Pandas](https://github.com/includesorrow/Portfolio_Shin/tree/master/Data/Python/Pandas%2CNumpy%2CMatplotlib)
@@ -81,9 +82,16 @@
 
 ## Project
 
+### Java
+  1. 피부과 예약 프로그램 (1.18 ~ 1.23 / 4일)
 
+### Spring
+  1. 영화 스트리밍 서비스 (3.8 ~ 4.2 / 18일)
+  
 
-
+### Python, Hadoop-Ecosystem 
+  1. Python
+  2. Hadoop-Ecosystem
 
 
 
