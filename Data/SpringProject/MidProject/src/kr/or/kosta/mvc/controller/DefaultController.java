@@ -1,183 +1,109 @@
 package kr.or.kosta.mvc.controller;
 
-import java.util.ArrayList;import java.util.HashMap;import java.util.List;import java.util.Map;
+
+import java.text.DecimalFormat;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 
-import kr.or.kosta.dto.InserttagVO;
-import kr.or.kosta.dto.MemberVO;
-import kr.or.kosta.dto.MovieVO;
-import kr.or.kosta.dto.MovietagVO;
-import kr.or.kosta.mvc.dao.CommunityDao;
-import kr.or.kosta.mvc.dao.DynamicExampleDao;
-import kr.or.kosta.mvc.dao.TagListDao;
-
-import static kr.or.kosta.mvc.dao.CommunityDao.countlist;
-import static kr.or.kosta.mvc.dao.TagListDao.namelist;
+import kr.or.kosta.mvc.dao.JoinLogDao;
+import kr.or.kosta.mvc.dao.LoginLogDao;
+import kr.or.kosta.mvc.dao.MovieDao;
+import kr.or.kosta.mvc.dao.MovieSoldLogDao;
+import kr.or.kosta.mvc.dao.ViewLogDao;
+import kr.or.kosta.mvc.dao.WatchLogDao;
+import kr.or.kosta.mvc.inter.LogDao;
 
 
 
 /*
- * 컨트롤러 부분
+ * DispatcherServlet 요청에 응답하는 모델
+ * RequestMapping => HandlerMapping
+ * 
  * */
 @Controller
 public class DefaultController {
 
 	@Autowired
-	private DynamicExampleDao dao; 
-	//Dao를 오토와이어드 시킴
-	
+	private WatchLogDao watchLogDao;
+	@Autowired
+	private ViewLogDao viewLogDao;
+	@Autowired
+	private MovieSoldLogDao movieSoldLogDao;
+	@Autowired
+	private LoginLogDao loginLogDao;
+	@Autowired
+	private JoinLogDao joinLogDao;
+	@Autowired
+	private MovieDao movieDao;
+	private LogDao logDao;
 	
 	@RequestMapping("/")
-	public String index() {
-		System.out.println("index");
+	public String index(Model m) {
+		DecimalFormat df=new DecimalFormat("#,###");
+		int watchlogcount_all=watchLogDao.getLogCount_All();
+		int watchlogcount_currentdate=watchLogDao.getLogCount_CurrentDate();
+		
+		int viewlogcount_all=viewLogDao.getLogCount_All();
+		int viewlogcount_currentdate=viewLogDao.getLogCount_CurrentDate();
+		
+		int moviesoldLogcount_all=movieSoldLogDao.getLogCount_All();
+		int moviesoldLogcount_currentdate=movieSoldLogDao.getLogCount_CurrentDate();
+		
+		int loginLogcount_all=loginLogDao.getLogCount_All();
+		int loginLogcount_currentdate=loginLogDao.getLogCount_CurrentDate();
+		
+		int joinLogcount_all=joinLogDao.getLogCount_All();
+		int joinLogcount_currentdate=joinLogDao.getLogCount_CurrentDate();
+		
+		int purchase_pastmonth=movieDao.getMoviePurchaseCount_pastMonth();
+		int purchase_thismonth=movieDao.getMoviePurchaseCount_thisMonth();
+		
+		int copyrightcost_pastmonth=movieDao.getMovieCopyRightCost_pastMonth();
+		int copyrightcost_thismonth=movieDao.getMovieCopyRightCost_thisMonth();
+		
+		int investment_pastmonth=movieDao.getMovieInvestment_pastMonth();
+		int investment_thismonth=movieDao.getMovieInvestment_thisMonth();
+		
+		m.addAttribute("watchlogcount_all",df.format(watchlogcount_all));
+		m.addAttribute("watchlogcount_currentdate",df.format(watchlogcount_currentdate));
+		
+		m.addAttribute("viewlogcount_all",df.format(viewlogcount_all));
+		m.addAttribute("viewlogcount_currentdate",df.format(viewlogcount_currentdate));
+		
+		m.addAttribute("moviesoldlogcount_all",df.format(moviesoldLogcount_all));
+		m.addAttribute("moviesoldlogcount_currentdate",df.format(moviesoldLogcount_currentdate));
+		m.addAttribute("loginlogcount_all",df.format(loginLogcount_all));
+		m.addAttribute("loginlogcount_currentdate",df.format(loginLogcount_currentdate));
+		
+		m.addAttribute("joinlogcount_all",df.format(joinLogcount_all));
+		m.addAttribute("joinlogcount_currentdate",df.format(joinLogcount_currentdate));
+		
+		m.addAttribute("purchase_pastmonth",df.format(purchase_pastmonth));
+		m.addAttribute("purchase_thismonth",df.format(purchase_thismonth));
+		
+		m.addAttribute("copyrightcost_pastmonth",df.format(copyrightcost_pastmonth));
+		m.addAttribute("copyrightcost_thismonth",df.format(copyrightcost_thismonth));
+		
+		m.addAttribute("investment_pastmonth",df.format(investment_pastmonth));
+		m.addAttribute("investment_thismonth",df.format(investment_thismonth));
+		
 		return "index";
 	}
-	//index 출력을 위함.
+
 	
 	@GetMapping("/{path}")
 	public String ex1(@PathVariable String path) {
 		return path;
 	}
-	//각각 경로를 알아서 보내기 위한 Get Mapping
-	
-	
-
-	@GetMapping(value={"/blank5"})
-	public String movielist5(Model m) {
-		Map<String, String> map= new HashMap<String, String>();		
-		m.addAttribute("list",dao.getMovieList3(map));
-		return "blank5";
-	}
-	//blank5 ( 영화 검색 및 추가 등)를 위한 Get방식의 Mapping
-	
-	@GetMapping("/chartjs")
-	public String sendchartvalue(String cmd, Model m) {
-		List<Integer> result = null;
-		result = dao.getprice1();
-		System.out.println(result);
-		m.addAttribute("chart1",dao.getprice1());
-		return "chartjs";
-	}
-	//차트에 값을 보내기 위한 Mapping.
-	
-	@PostMapping("/blank5")
-	public String searchTitle5(String searchType,String search,Model m) {
-		Map<String, String> map= new HashMap<String, String>();
-		map.put("searchType", searchType);
-		map.put("search", search); 
-		System.out.println(search);
-		m.addAttribute("list",dao.getMovieList3(map)); 
-		m.addAttribute("searchType",searchType);
-		return "blank5";
-	}
-	//검색에 값을 받기 위한 Post방식의 Mapping
-	
-	
-	
-	
-	
-	@RequestMapping(value="recommendmovie.do",method=RequestMethod.POST)
-	public String recommendmovie() throws Exception{
-//		dao.outputmovierecommend(member_number);
-		int member_number = 11;
-		System.out.println("추천영화 : " + dao.outputmovierecommend(member_number));
-		return "redirect:blank5";
-	}
-	
-	
-	
-	
-	
-	@RequestMapping(value="update.do", method=RequestMethod.POST)
-	public String update(@ModelAttribute MovieVO vo) throws Exception{
-		dao.updateprice(vo);
-		
-		return "redirect:blank5"; 
-	}
-	//영화에서 영화의 가격이 업데이트시 매핑
-	
-	@RequestMapping(value="updatestatus.do", method=RequestMethod.POST)
-	public String updatestatus(@ModelAttribute MovieVO vo) throws Exception{
-		dao.updatestatus(vo);
-		return "redirect:blank5";
-	}
-	//영화에서 영화의 active_status_number 수정을 위한 매핑
-	
-	
-	@RequestMapping(value="insert.do", method=RequestMethod.POST)
-	public String insert(@ModelAttribute MovieVO vo, @ModelAttribute MovietagVO voo) throws Exception{
-		dao.createmovie(vo);
-		dao.beforeinsertmovie(voo);
-		
-		
-		return "redirect:blank5";
-	}
-	//영화 추가를 위한 매핑
-	
-	@RequestMapping(value="moviepriceyearupdate.do", method=RequestMethod.POST)
-	public String updatemoviepriceyear(@ModelAttribute MovieVO vo) throws Exception{
-		dao.updatemoviepriceyear();
-		
-		return "redirect:blank5";
-	}
-	
-	@RequestMapping(value="inserttag.do",method=RequestMethod.POST)
-	public String inserttag(@ModelAttribute InserttagVO vo ) throws Exception{
-		TagListDao tldao = new TagListDao();
-		List<MovieVO> movienumberlist =dao.getsavetaglist();
-		String movie_num="";
-	for(MovieVO mv: movienumberlist) {
-		movie_num=mv.getMovie_number();
-		System.out.println("movie_num : "+movie_num);
-		for(int i = 0; i<=9; i++) {
-			vo.setMovie_number(movie_num);
-			tldao.connectR(movie_num);
-			String tag_name;
-			tag_name = TagListDao.namelist[i];
-			vo.setTag_name(tag_name);
-			Map<String,String> map = new HashMap<String,String>();
-			map.put("movie_number",movie_num);
-			map.put("tag_name",tag_name);
-			if(dao.checktagname(tag_name)==0) {
-				dao.inserttag(vo);
-				dao.insertmovietag(map);
-			} else {
-				dao.insertmovietag(map);
-			}
-		
-		}	
-		}
-		System.out.println("insert end");
-		return "redirect:blank5";
-	}	
-	//댓글 탑 10개를 출력하기 위한 매핑
 
 	
+
 	
-	@RequestMapping(value="updatecommunity.do",method=RequestMethod.POST)
-	public String insertMemberCommunity(@ModelAttribute MemberVO vo ) throws Exception{
-		CommunityDao co = new CommunityDao();
-		int mem_community_number = 0;
-		co.connectR();
-		int member_list_number = dao.memberfinalnumber();
-		for(int i=11; i<=member_list_number-10; i++) {
-			System.out.println("시작!"+countlist[i-10]);
-			vo.setMember_number(i);
-			mem_community_number = countlist[i-10];
-			vo.setMember_community_number(mem_community_number);
-			dao.updatecommunitymember(vo);
-		}
-	return "redirect:blank5";
-	}
-	//군집화를 위한 매핑
 	
 	
 	

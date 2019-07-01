@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"    pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html lang="kr">
 
 <head>
@@ -30,59 +29,6 @@
     License: https://templatemag.com/license/
   ======================================================= -->
 </head>
-
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!-- jquery	 -->
-
-
-<script>
-window.onload = function () {
-	
-//차트를 위한 스크립트
-var chart = new CanvasJS.Chart("chartContainer", {
-	animationEnabled: true,
-	exportEnabled: true,
-	theme: "light1",
-	title:{
-		text: "영화별 가격 리스트"
-	},
-	data: [{
-		
-		
-		
-	
-		type: "pyramid",
-		yValueFormatString: "#\"개\"",
-		indexLabelFontColor: "black",
-		indexLabelFontSize: 16,
-		indexLabel: "{label} - {y}",
-		//reversed: true, // Reverses the pyramid
-		
-		dataPoints: [
-			<c:forEach items="${chart1}" var="list" begin="0" end="0">
-			{ y: ${chart1[0]}, label: "가격 : 0원" },
-			{ y: ${chart1[1]}, label: "가격 : 1000원" },
-			{ y: ${chart1[2]}, label: "가격 : 2500원" },
-			{ y: ${chart1[3]}, label: "가격 : 5000원" },
-			
-			{ y: ${chart1[4]}, label: "가격 : 10000원" }
-		]
-	</c:forEach	>
-	
-		
-	}]
-
-	
-
-				
-});
-chart.render();
-
-}
-
-	
-</script>
 
 <body>
   <section id="container">
@@ -416,39 +362,66 @@ chart.render();
         MAIN CONTENT
         *********************************************************************************************************************************************************** -->
     <!--main content start-->
-    
-    
-    
-    
-    
     <section id="main-content">
-    
       <section class="wrapper">
-    
-          
-      
-      
-      <!-- 차트 출력 -->
         <h3><i class="fa fa-angle-right"></i> Chartjs Charts</h3>
         <!-- page start-->
         <div class="tab-pane" id="chartjs">
           <div class="row mt">
-            
             <div class="col-lg-6">
               <div class="content-panel">
-              
-            <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+                <h4><i class="fa fa-angle-right"></i> Doughnut</h4>
+                <div class="panel-body text-center">
+                  <canvas id="doughnut" height="300" width="400"></canvas>
                 </div>
               </div>
             </div>
-            
-            
-            
+            <div class="col-lg-6">
+              <div class="content-panel">
+                <h4><i class="fa fa-angle-right"></i> Line</h4>
+                <div class="panel-body text-center">
+                  <canvas id="line" height="300" width="400"></canvas>
+                </div>
+              </div>
+            </div>
           </div>
-          
-          
-          
-          
+          <div class="row mt">
+            <div class="col-lg-6">
+              <div class="content-panel">
+                <h4><i class="fa fa-angle-right"></i> Radar</h4>
+                <div class="panel-body text-center">
+                  <canvas id="radar" height="300" width="400"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="content-panel">
+                <h4><i class="fa fa-angle-right"></i> Polar Area</h4>
+                <div class="panel-body text-center">
+                  <canvas id="polarArea" height="300" width="400"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt">
+            <div class="col-lg-6">
+              <div class="content-panel">
+                <h4><i class="fa fa-angle-right"></i> Bar</h4>
+                <div class="panel-body text-center">
+                  <canvas id="bar" height="300" width="400"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="content-panel">
+                <h4><i class="fa fa-angle-right"></i> Pie</h4>
+                <div class="panel-body text-center">
+                  <canvas id="pie" height="300" width="400"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- page end-->
       </section>
     </section>
@@ -486,7 +459,7 @@ chart.render();
   <script src="lib/common-scripts.js"></script>
   <!--script for this page-->
   <script src="lib/chart-master/Chart.js"></script>
-  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <script src="lib/chartjs-conf.js"></script>
 
 </body>
 

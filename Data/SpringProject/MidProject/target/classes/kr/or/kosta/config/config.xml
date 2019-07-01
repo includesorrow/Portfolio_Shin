@@ -4,14 +4,8 @@
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<typeAliases>
-	<typeAlias type="kr.or.kosta.dto.MovieVO" alias="movievo"></typeAlias>
-	<typeAlias type="kr.or.kosta.dto.MovietagVO" alias="movietagvo"></typeAlias>
-	<typeAlias type="kr.or.kosta.dto.TagtableVO" alias="tagtablevo"></typeAlias>
-	<typeAlias type="kr.or.kosta.dto.PricecountVO" alias="pricecountvo"></typeAlias>
-	<typeAlias type="kr.or.kosta.dto.InserttagVO" alias="inserttagvo"></typeAlias>
-	<typeAlias type="kr.or.kosta.dto.MemberVO" alias="membervo"></typeAlias>
-	
-	
+		<typeAlias type="kr.or.kosta.dto.MemberVO" alias="mvo" />
+		<typeAlias  type="kr.or.kosta.dto.MovieVO" alias="movo" />
 	</typeAliases>
-	
+
 </configuration>
