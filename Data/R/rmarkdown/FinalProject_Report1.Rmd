@@ -1,0 +1,165 @@
+---
+title: "파이널 프로젝트"
+author: "Shin"
+date: '2019 6 24 '
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+파이널 프로젝트에서 사용되었던 코드들입니다.
+
+```{r}
+
+##라이브러리 호출
+
+library(shiny)
+library(ggplot2)
+library(tidyverse)
+library(caret)
+#library(tree)
+library(rpart)
+library(dplyr)
+library(neuralnet)
+library(nnet)
+library(caret)
+library(ROCR)
+library(devtools)
+library(NeuralNetTools)
+library(UsingR)
+
+```
+
+
+
+```{r}
+jeju_data <- read.csv(file = "C:/Users/daily/Desktop/FinalProject/FinalProject/jeju_financial_life_data.csv")
+
+summary(jeju_data)
+
+rpart_test <- rpart(avg_credit_rat~. , data = jeju_data)
+plot(rpart_test)
+text(rpart_test)
+
+
+jeju_dt_data <- jeju_data %>% filter(jeju_data$medium_resid_rat >= 0)
+summary(jeju_dt_data)
+
+rpart_test <- rpart(avg_credit_rat~. , data = jeju_dt_data)
+
+plot(rpart_test)
+text(rpart_test)
+
+
+test_l <-lm(data = jeju_dt_data, avg_income~.) 
+test_l
+summary(test_l)
+plot(test_l)
+
+
+
+
+  
+
+data<-iris
+scale.data<-data.frame(lapply(data[,1:4], function(x) scale(x)))
+scale.data
+scale.data$Species<-data$Species
+index<-sample(1:nrow(scale.data),round(0.75*nrow(scale.data)),replace=FALSE)
+clust.train<-scale.data[index,]
+clust.test<-scale.data[-index,]
+
+
+############################
+## 2019.06.03
+##################
+
+
+
+test1<-lm(avg_credit_rat~medium_resid_rat, data = jeju_data)
+wholetest11 <- cor.test(jeju_data$avg_spend, jeju_data$avg_credit_rat)
+wholetest11
+
+
+
+##decision tree###
+
+set.seed(2000) #reproducability setting
+intrain<-caret::createDataPartition(y=jeju_data$avg_credit_rat, p=0.7, list=FALSE)
+
+train<-jeju_data[intrain, ]
+test<-jeju_data[-intrain, ]
+
+
+
+
+
+#ptree<-prune(rpartmod, cp= rpartmod$cptable[which.min(rpartmod$cptable[,"xerror"]),"CP"])
+#plot(ptree)
+#text(ptree)
+
+#rpartpred<-predict(ptree, test, type='class')
+#confusionMatrix(rpartpred, table(test$avg_credit_rat))
+
+
+# ### party decision tree ###
+# jeju_data_party <- jeju_data[,c(5,6,14,16,18,19,24)]
+# partymod<-ctree(avg_credit_rat~., data=jeju_data_party)
+# plot(partymod)
+# 
+# 
+# partymod<-ctree(avg_credit_rat~., data=jeju_data_party)
+# plot(partymod)
+# 
+# partypred<-predict(partymod, test)
+#confusionMatrix(partypred, jeju_data_party$avg_credit_rat)
+# 
+# 
+# set.seed(2549) #reproducability setting
+# intrain<-createDataPartition(y = jeju_data_party$avg_credit_rat, p=0.7, list=FALSE) 
+# train<-jeju_data_party[intrain, ]
+# test<-jeju_data_party[-intrain, ]
+# A <- ctree_control(maxdepth=20)
+# B <- ctree(avg_credit_rat ~ . , data = jeju_data_party, controls = A)
+# plot(B, compress=TRUE)
+
+
+###############################
+
+jeju_data_second <- jeju_data[,c(5,6,14,16,18,19,24,27)]
+#jeju_data_second
+second_rm <- lm(data=jeju_data_second,avg_credit_rat ~.)
+second_rm
+summary(second_rm)
+plot(second_rm)
+#abline(out,col="red")
+
+
+
+####
+
+test_second<-lm(avg_credit_rat~., data = jeju_data_second)
+se_wt <- cor.test(jeju_data_second$avg_income, jeju_data$avg_credit_rat)
+se_wt
+sampletest1 <- cor.test(jeju_data_second$avg_spend, jeju_data_second$avg_credit_rat)
+sampletest1
+
+
+
+
+
+
+set.seed(1)
+inTrain <- createDataPartition(y=jeju_data_second$avg_credit_rat, p=0.7, list=FALSE)
+cb.train <- jeju_data_second[inTrain,]
+cb.test <- jeju_data_second[-inTrain,]
+
+
+
+
+
+
+
+```

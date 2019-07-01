@@ -1,0 +1,169 @@
+---
+title: "<ec>쓽<ec>궗寃곗젙<eb>굹臾대え<eb>뜽"
+author: "Shin"
+date: "2019<eb>뀈 5<ec>썡 28<ec>씪"
+output:
+  pdf_document: default
+  word_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+- 의사결정나무모델
+- 데이터의 특징에 대한 질문에 따른 응답에 데이터를 분류해가는 알고리즘
+
+
+```{r}
+#install.packages("rpart")
+#library(rpart)
+library(rpart)
+```
+
+```{r}
+m <- rpart(Species ~. , data=iris)
+
+```
+
+- 시각화
+
+```{r}
+plot(m,compress = TRUE , margin = 2)
+text(m, cex=0.9)
+```
+
+- 다른 라이브러리 호출
+
+```{r}
+#install.packages("rpart.plot")
+library(rpart.plot)
+```
+```{r}
+# type = 4 레이블 작성
+# extra = 2 각 노드의 관측값과 올바르게 예측된 비율을 출력
+# digits = 3
+prp(m,type = 4, extra = 2, digits = 3)
+```
+
+```{r}
+#predict 예측 수행, 붓꽃의 종을 class로 지정해서 출력
+head(predict(m, newdata = iris, type="class"))
+```
+
+
+```{r}
+#install.packages("caret")
+#install.packages("party")
+#install.packages("e1071")
+library(caret)
+library(party)
+library(e1071)
+```
+
+
+```{r}
+#랜덤 샘플링
+samp <- c(sample(1:50,35), sample(51:100,35), sample(101:150,35))
+#학습용 데이터셋 70%
+train_set <- iris[samp,]
+#검증용 데이터셋 30%
+test_set <- iris[-samp,]
+
+```
+
+
+```{r}
+#트리식 작성
+# 종속변수 ~ 독립변수
+# .을 찍어도 되지만 변수들을 추가하는 거다.
+# 품종은 종속변수다.
+
+formula <- Species ~ Sepal.Length + Sepal.Width + Petal.Length + Petal.Width
+
+#트리모델 생성 ctree : 의사결정나무
+# 데이터는 학습용 데이터 셋이다.
+
+iris_ctree <- ctree(formula, data=train_set)
+iris_ctree
+plot(iris_ctree)
+```
+
+##의사결정나무 단점
+
+```{r}
+#의사결정나무 단점 : 과적합 문제가 발생
+# 과거의 데이터는 잘맞추지만, 새로운 데이터에 대한 예측력이 약함
+# 과적합화를 방지할 수 있는 대표적인 방법중 하나가 랜덤포레스트
+#랜덤포레스트(나무를 여러개 만들어 놓고 그 중에서 성과가 제일 좋은것을 선택)
+# 여러개의 의사결정나무를 만들고 투표를 통해 다수결로 결과를 결정함
+# 처리가 빠르고 분류의 정밀도가 높다
+```
+
+- 데이터 불러오기
+
+```{r}
+#install.packages("randomForest")
+library(randomForest)
+
+```
+
+
+```{r}
+data(iris)
+
+#훈련용 : 검증용 데이터 셋을 7: 3으로 구분
+samp <- c(sample(1:50, 35), sample(51:100,35), sample(101:150,35))
+iris.tr <- iris[samp,]
+iris.te <- iris[-samp,]
+
+```
+
+## 랜덤 포레스트 모델 생성
+
+
+```{r}
+
+# 100개의 트리로 이루어진 랜덤 포레스트
+# 종속변수 : Species, 독립변수 : 나머지
+# data = iris.tr : 데이터는 학습용 데이터 셋
+# ntree = 100 : 트리의 갯수가 100개인데 그 중에서 성과가 좋은 것을 채택하겠다.
+rf <- randomForest(Species ~., data = iris.tr, ntree = 100)
+rf
+```
+
+
+##모델의 정확도 평가 (학습용 데이터)
+
+```{r}
+#품종 컬럼을 제외하고 입력 데이터 셋 생성
+x <- subset(iris.tr, select = -Species)
+# predict(모델, 입력데이터)
+# 이것이 품종 예측이다.
+pred <- predict (rf,x)
+# 오분류표 출력
+# pred : 예측된 품종이고, iris.tr$Species가 실제 품종이다.
+# 비교를 했더니 몇개는 맞췄고 나머지 몇개는 틀린 것 형태다
+table(pred,iris.tr$Species)
+mean(pred==iris.tr$Species)
+
+#학습이 잘 된 것이다. 100개중에 제일 잘 된 것을 뽑았으니까 100%이다.
+
+```
+
+##모델의 정확도 평가 (테스트 데이터)
+
+```{r}
+#품종 컬럼을 제외하고 입력 데이터 셋 생성
+y <- subset(iris.te, select = -Species)
+# predict(모델, 입력데이터)
+# 이것이 품종 예측이다.
+pred <- predict (rf,y)
+# 오분류표 출력
+# pred : 예측된 품종이고, iris.tr$Species가 실제 품종이다.
+# 비교를 했더니 몇개는 맞췄고 나머지 몇개는 틀린 것 형태다
+table(pred,iris.te$Species)
+mean(pred==iris.te$Species)
+
+```

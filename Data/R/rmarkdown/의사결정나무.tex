@@ -1,0 +1,537 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={쓽궗寃곗젙굹臾대え뜽},
+            pdfauthor={Shin},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\providecommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+
+  \title{쓽궗寃곗젙굹臾대え뜽}
+    \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+    \author{Shin}
+    \preauthor{\centering\large\emph}
+  \postauthor{\par}
+      \predate{\centering\large\emph}
+  \postdate{\par}
+    \date{2019뀈 5썡 28씪}
+
+
+\begin{document}
+\maketitle
+
+\begin{itemize}
+\tightlist
+\item
+  의사결정나무모델
+\item
+  데이터의 특징에 대한 질문에 따른 응답에 데이터를 분류해가는 알고리즘
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#install.packages("rpart")}
+\CommentTok{#library(rpart)}
+\KeywordTok{library}\NormalTok{(rpart)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{m <-}\StringTok{ }\KeywordTok{rpart}\NormalTok{(Species }\OperatorTok{~}\NormalTok{. , }\DataTypeTok{data=}\NormalTok{iris)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{itemize}
+\tightlist
+\item
+  시각화
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{plot}\NormalTok{(m,}\DataTypeTok{compress =} \OtherTok{TRUE}\NormalTok{ , }\DataTypeTok{margin =} \DecValTok{2}\NormalTok{)}
+\KeywordTok{text}\NormalTok{(m, }\DataTypeTok{cex=}\FloatTok{0.9}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{의사결정나무_files/figure-latex/unnamed-chunk-3-1.pdf}
+
+\begin{itemize}
+\tightlist
+\item
+  다른 라이브러리 호출
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#install.packages("rpart.plot")}
+\KeywordTok{library}\NormalTok{(rpart.plot)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: package 'rpart.plot' was built under R version 3.5.3
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# type = 4 레이블 작성}
+\CommentTok{# extra = 2 각 노드의 관측값과 올바르게 예측된 비율을 출력}
+\CommentTok{# digits = 3}
+\KeywordTok{prp}\NormalTok{(m,}\DataTypeTok{type =} \DecValTok{4}\NormalTok{, }\DataTypeTok{extra =} \DecValTok{2}\NormalTok{, }\DataTypeTok{digits =} \DecValTok{3}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{의사결정나무_files/figure-latex/unnamed-chunk-5-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#predict 예측 수행, 붓꽃의 종을 class로 지정해서 출력}
+\KeywordTok{head}\NormalTok{(}\KeywordTok{predict}\NormalTok{(m, }\DataTypeTok{newdata =}\NormalTok{ iris, }\DataTypeTok{type=}\StringTok{"class"}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##      1      2      3      4      5      6 
+## setosa setosa setosa setosa setosa setosa 
+## Levels: setosa versicolor virginica
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#install.packages("caret")}
+\CommentTok{#install.packages("party")}
+\CommentTok{#install.packages("e1071")}
+\KeywordTok{library}\NormalTok{(caret)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: package 'caret' was built under R version 3.5.3
+\end{verbatim}
+
+\begin{verbatim}
+## Loading required package: lattice
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'lattice' was built under R version 3.5.3
+\end{verbatim}
+
+\begin{verbatim}
+## Loading required package: ggplot2
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'ggplot2' was built under R version 3.5.3
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(party)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: package 'party' was built under R version 3.5.3
+\end{verbatim}
+
+\begin{verbatim}
+## Loading required package: grid
+\end{verbatim}
+
+\begin{verbatim}
+## Loading required package: mvtnorm
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'mvtnorm' was built under R version 3.5.2
+\end{verbatim}
+
+\begin{verbatim}
+## Loading required package: modeltools
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'modeltools' was built under R version 3.5.2
+\end{verbatim}
+
+\begin{verbatim}
+## Loading required package: stats4
+\end{verbatim}
+
+\begin{verbatim}
+## Loading required package: strucchange
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'strucchange' was built under R version 3.5.3
+\end{verbatim}
+
+\begin{verbatim}
+## Loading required package: zoo
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'zoo' was built under R version 3.5.3
+\end{verbatim}
+
+\begin{verbatim}
+## 
+## Attaching package: 'zoo'
+\end{verbatim}
+
+\begin{verbatim}
+## The following objects are masked from 'package:base':
+## 
+##     as.Date, as.Date.numeric
+\end{verbatim}
+
+\begin{verbatim}
+## Loading required package: sandwich
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'sandwich' was built under R version 3.5.3
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(e1071)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: package 'e1071' was built under R version 3.5.3
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#랜덤 샘플링}
+\NormalTok{samp <-}\StringTok{ }\KeywordTok{c}\NormalTok{(}\KeywordTok{sample}\NormalTok{(}\DecValTok{1}\OperatorTok{:}\DecValTok{50}\NormalTok{,}\DecValTok{35}\NormalTok{), }\KeywordTok{sample}\NormalTok{(}\DecValTok{51}\OperatorTok{:}\DecValTok{100}\NormalTok{,}\DecValTok{35}\NormalTok{), }\KeywordTok{sample}\NormalTok{(}\DecValTok{101}\OperatorTok{:}\DecValTok{150}\NormalTok{,}\DecValTok{35}\NormalTok{))}
+\CommentTok{#학습용 데이터셋 70%}
+\NormalTok{train_set <-}\StringTok{ }\NormalTok{iris[samp,]}
+\CommentTok{#검증용 데이터셋 30%}
+\NormalTok{test_set <-}\StringTok{ }\NormalTok{iris[}\OperatorTok{-}\NormalTok{samp,]}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#트리식 작성}
+\CommentTok{# 종속변수 ~ 독립변수}
+\CommentTok{# .을 찍어도 되지만 변수들을 추가하는 거다.}
+\CommentTok{# 품종은 종속변수다.}
+
+\NormalTok{formula <-}\StringTok{ }\NormalTok{Species }\OperatorTok{~}\StringTok{ }\NormalTok{Sepal.Length }\OperatorTok{+}\StringTok{ }\NormalTok{Sepal.Width }\OperatorTok{+}\StringTok{ }\NormalTok{Petal.Length }\OperatorTok{+}\StringTok{ }\NormalTok{Petal.Width}
+
+\CommentTok{#트리모델 생성 ctree : 의사결정나무}
+\CommentTok{# 데이터는 학습용 데이터 셋이다.}
+
+\NormalTok{iris_ctree <-}\StringTok{ }\KeywordTok{ctree}\NormalTok{(formula, }\DataTypeTok{data=}\NormalTok{train_set)}
+\NormalTok{iris_ctree}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+##   Conditional inference tree with 4 terminal nodes
+## 
+## Response:  Species 
+## Inputs:  Sepal.Length, Sepal.Width, Petal.Length, Petal.Width 
+## Number of observations:  105 
+## 
+## 1) Petal.Length <= 1.9; criterion = 1, statistic = 98.235
+##   2)*  weights = 35 
+## 1) Petal.Length > 1.9
+##   3) Petal.Width <= 1.6; criterion = 1, statistic = 48.943
+##     4) Petal.Length <= 4.6; criterion = 1, statistic = 15.476
+##       5)*  weights = 29 
+##     4) Petal.Length > 4.6
+##       6)*  weights = 9 
+##   3) Petal.Width > 1.6
+##     7)*  weights = 32
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{plot}\NormalTok{(iris_ctree)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{의사결정나무_files/figure-latex/unnamed-chunk-9-1.pdf}
+
+\subsection{의사결정나무 단점}\label{-}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#의사결정나무 단점 : 과적합 문제가 발생}
+\CommentTok{# 과거의 데이터는 잘맞추지만, 새로운 데이터에 대한 예측력이 약함}
+\CommentTok{# 과적합화를 방지할 수 있는 대표적인 방법중 하나가 랜덤포레스트}
+\CommentTok{#랜덤포레스트(나무를 여러개 만들어 놓고 그 중에서 성과가 제일 좋은것을 선택)}
+\CommentTok{# 여러개의 의사결정나무를 만들고 투표를 통해 다수결로 결과를 결정함}
+\CommentTok{# 처리가 빠르고 분류의 정밀도가 높다}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{itemize}
+\tightlist
+\item
+  데이터 불러오기
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#install.packages("randomForest")}
+\KeywordTok{library}\NormalTok{(randomForest)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: package 'randomForest' was built under R version 3.5.3
+\end{verbatim}
+
+\begin{verbatim}
+## randomForest 4.6-14
+\end{verbatim}
+
+\begin{verbatim}
+## Type rfNews() to see new features/changes/bug fixes.
+\end{verbatim}
+
+\begin{verbatim}
+## 
+## Attaching package: 'randomForest'
+\end{verbatim}
+
+\begin{verbatim}
+## The following object is masked from 'package:ggplot2':
+## 
+##     margin
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{data}\NormalTok{(iris)}
+
+\CommentTok{#훈련용 : 검증용 데이터 셋을 7: 3으로 구분}
+\NormalTok{samp <-}\StringTok{ }\KeywordTok{c}\NormalTok{(}\KeywordTok{sample}\NormalTok{(}\DecValTok{1}\OperatorTok{:}\DecValTok{50}\NormalTok{, }\DecValTok{35}\NormalTok{), }\KeywordTok{sample}\NormalTok{(}\DecValTok{51}\OperatorTok{:}\DecValTok{100}\NormalTok{,}\DecValTok{35}\NormalTok{), }\KeywordTok{sample}\NormalTok{(}\DecValTok{101}\OperatorTok{:}\DecValTok{150}\NormalTok{,}\DecValTok{35}\NormalTok{))}
+\NormalTok{iris.tr <-}\StringTok{ }\NormalTok{iris[samp,]}
+\NormalTok{iris.te <-}\StringTok{ }\NormalTok{iris[}\OperatorTok{-}\NormalTok{samp,]}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{랜덤 포레스트 모델 생성}\label{---}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# 100개의 트리로 이루어진 랜덤 포레스트}
+\CommentTok{# 종속변수 : Species, 독립변수 : 나머지}
+\CommentTok{# data = iris.tr : 데이터는 학습용 데이터 셋}
+\CommentTok{# ntree = 100 : 트리의 갯수가 100개인데 그 중에서 성과가 좋은 것을 채택하겠다.}
+\NormalTok{rf <-}\StringTok{ }\KeywordTok{randomForest}\NormalTok{(Species }\OperatorTok{~}\NormalTok{., }\DataTypeTok{data =}\NormalTok{ iris.tr, }\DataTypeTok{ntree =} \DecValTok{100}\NormalTok{)}
+\NormalTok{rf}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+##  randomForest(formula = Species ~ ., data = iris.tr, ntree = 100) 
+##                Type of random forest: classification
+##                      Number of trees: 100
+## No. of variables tried at each split: 2
+## 
+##         OOB estimate of  error rate: 2.86%
+## Confusion matrix:
+##            setosa versicolor virginica class.error
+## setosa         35          0         0  0.00000000
+## versicolor      0         34         1  0.02857143
+## virginica       0          2        33  0.05714286
+\end{verbatim}
+
+\subsection{모델의 정확도 평가 (학습용 데이터)}\label{----}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#품종 컬럼을 제외하고 입력 데이터 셋 생성}
+\NormalTok{x <-}\StringTok{ }\KeywordTok{subset}\NormalTok{(iris.tr, }\DataTypeTok{select =} \OperatorTok{-}\NormalTok{Species)}
+\CommentTok{# predict(모델, 입력데이터)}
+\CommentTok{# 이것이 품종 예측이다.}
+\NormalTok{pred <-}\StringTok{ }\KeywordTok{predict}\NormalTok{ (rf,x)}
+\CommentTok{# 오분류표 출력}
+\CommentTok{# pred : 예측된 품종이고, iris.tr$Species가 실제 품종이다.}
+\CommentTok{# 비교를 했더니 몇개는 맞췄고 나머지 몇개는 틀린 것 형태다}
+\KeywordTok{table}\NormalTok{(pred,iris.tr}\OperatorTok{$}\NormalTok{Species)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##             
+## pred         setosa versicolor virginica
+##   setosa         35          0         0
+##   versicolor      0         35         0
+##   virginica       0          0        35
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{mean}\NormalTok{(pred}\OperatorTok{==}\NormalTok{iris.tr}\OperatorTok{$}\NormalTok{Species)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 1
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#학습이 잘 된 것이다. 100개중에 제일 잘 된 것을 뽑았으니까 100%이다.}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{모델의 정확도 평가 (테스트 데이터)}\label{----}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#품종 컬럼을 제외하고 입력 데이터 셋 생성}
+\NormalTok{y <-}\StringTok{ }\KeywordTok{subset}\NormalTok{(iris.te, }\DataTypeTok{select =} \OperatorTok{-}\NormalTok{Species)}
+\CommentTok{# predict(모델, 입력데이터)}
+\CommentTok{# 이것이 품종 예측이다.}
+\NormalTok{pred <-}\StringTok{ }\KeywordTok{predict}\NormalTok{ (rf,y)}
+\CommentTok{# 오분류표 출력}
+\CommentTok{# pred : 예측된 품종이고, iris.tr$Species가 실제 품종이다.}
+\CommentTok{# 비교를 했더니 몇개는 맞췄고 나머지 몇개는 틀린 것 형태다}
+\KeywordTok{table}\NormalTok{(pred,iris.te}\OperatorTok{$}\NormalTok{Species)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##             
+## pred         setosa versicolor virginica
+##   setosa         15          0         0
+##   versicolor      0         13         0
+##   virginica       0          2        15
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{mean}\NormalTok{(pred}\OperatorTok{==}\NormalTok{iris.te}\OperatorTok{$}\NormalTok{Species)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 0.9555556
+\end{verbatim}
+
+
+\end{document}
