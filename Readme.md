@@ -43,12 +43,12 @@
   3. [Numpy](https://github.com/includesorrow/Portfolio_Shin/tree/master/Data/Python/Pandas%2CNumpy%2CMatplotlib)
   4. [Matplotlib](https://github.com/includesorrow/Portfolio_Shin/tree/master/Data/Python/Pandas%2CNumpy%2CMatplotlib)
 
-### R
-  1. [ggplot2]
-  2. [dplyr]
-  3. [Rmarkdown]
-  4. [Shiny]
-  5. [Machine Learning]
+### R9
+  1. [ggplot2](https://github.com/includesorrow/Portfolio_Shin/tree/master/Data/R/ggplot2)
+  2. [dplyr](https://github.com/includesorrow/Portfolio_Shin/tree/master/Data/R/dplyr)
+  3. [Rmarkdown](https://github.com/includesorrow/Portfolio_Shin/tree/master/Data/R/rmarkdown)
+  4. [Shiny](https://github.com/includesorrow/Portfolio_Shin/tree/master/Data/R/shiny)
+  5. [Machine Learning](https://github.com/includesorrow/Portfolio_Shin/tree/master/Data/R/ML/LR)
 
 ### Java
   1. [Spring]
