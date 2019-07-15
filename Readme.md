@@ -88,6 +88,16 @@
 ### Spring
   1. 영화 스트리밍 서비스 (3.8 ~ 4.2 / 18일)
   
+### SPSS Modeler
+- 여성가족패널 출산력 데이터 분석
+
+- 직방
+
+### R
+
+- 직방
+
+
 
 ### Python, Hadoop-Ecosystem 
   1. Python
