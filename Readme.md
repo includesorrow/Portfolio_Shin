@@ -34,9 +34,22 @@
 - github : includesorrow
 - 전화번호 : 010-5164-7769
 
+
+
+## Project
+
+### [Java 기반 피부과 예약 프로그램 (1.18 ~ 1.23 / 4일)](https://github.com/includesorrow/Java_SemiProject_Hospital)
+
+### [Spring 기반 영화 스트리밍 서비스 (3.8 ~ 4.2 / 18일)](https://github.com/includesorrow/WAFLIX)
+
+### [Hadoop Eco-System 기반 신용등급 확인 프로젝트 (5.28 ~ 6.21 / 15일)](https://github.com/includesorrow/Credit_Rating_Analysis_Project)
+
+
+
+
 ## Programming Language
-- 수업 및 개인적으로 기초부터 공부한 내용들을 정리한 파일입니다.
-- 코드 확인은 해당 버튼을 누르시면 확인 가능합니다.
+- 사용해본 경험이 있는 언어 및 프레임워크, 패키지에 대한 리스트입니다.
+
 ### Python
   1. Flask
   2. Pandas
@@ -75,19 +88,6 @@
   2. Flume
   3. Hive
   4. Spark
-
-
-
-
-
-
-## Project
-
-### [Java 기반 피부과 예약 프로그램 (1.18 ~ 1.23 / 4일)](https://github.com/includesorrow/Java_SemiProject_Hospital)
-
-### [Spring 기반 영화 스트리밍 서비스 (3.8 ~ 4.2 / 18일)](https://github.com/includesorrow/WAFLIX)
-
-### [Hadoop Eco-System 기반 신용등급 확인 프로젝트 (5.28 ~ 6.21 / 15일)](https://github.com/includesorrow/Credit_Rating_Analysis_Project)
 
 
 
