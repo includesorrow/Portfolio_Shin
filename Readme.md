@@ -38,42 +38,43 @@
 - 수업 및 개인적으로 기초부터 공부한 내용들을 정리한 파일입니다.
 - 코드 확인은 해당 버튼을 누르시면 확인 가능합니다.
 ### Python
-  1. [Flask](https://github.com/includesorrow/Portfolio_Shin/tree/master/Data/Python/Flask)
-  2. [Pandas](https://github.com/includesorrow/Portfolio_Shin/tree/master/Data/Python/Pandas%2CNumpy%2CMatplotlib)
-  3. [Numpy](https://github.com/includesorrow/Portfolio_Shin/tree/master/Data/Python/Pandas%2CNumpy%2CMatplotlib)
-  4. [Matplotlib](https://github.com/includesorrow/Portfolio_Shin/tree/master/Data/Python/Pandas%2CNumpy%2CMatplotlib)
-
-### R9
-  1. [ggplot2](https://github.com/includesorrow/Portfolio_Shin/tree/master/Data/R/ggplot2)
-  2. [dplyr](https://github.com/includesorrow/Portfolio_Shin/tree/master/Data/R/dplyr)
-  3. [Rmarkdown](https://github.com/includesorrow/Portfolio_Shin/tree/master/Data/R/rmarkdown)
-  4. [Shiny](https://github.com/includesorrow/Portfolio_Shin/tree/master/Data/R/shiny)
-  5. [Machine Learning](https://github.com/includesorrow/Portfolio_Shin/tree/master/Data/R/ML/LR)
+  1. Flask
+  2. Pandas
+  3. Numpy
+  4. Matplotlib
+  
+### R
+  1. ggplot2
+  2. dplyr
+  3. Rmarkdown
+  4. Shiny
+  5. Machine Learning
 
 ### Java
-  1. [Spring]
-  2. [JSP]
-  3. [JQuery]
-  4. [MyBatis]
-  5. [RJava]
+  1. Spring
+  2. JSP
+  3. JQuery
+  4. MyBatis
+  5. RJava
   
 ### HTML
-  1. [JQuery]
-  2. [CSS]
-  3. [JavaScript]
+  1. JQuery
+  2. CSS
+  3. JavaScript
 
 ### SQL
-  1. [OracleSQL]
-  2. [MySQL]
+  1. OracleSQL
+  2. MySQL
 
 ### Linux
-  1. [CentOS]
+  1. CentOS
+  2. Ubuntu
  
 ### Hadoop-EcoSystem
-  1. [Hadoop]
-  2. [Flume]
-  3. [Hive]
-  4. [Spark]
+  1. Hadoop
+  2. Flume
+  3. Hive
+  4. Spark
 
 
 
@@ -82,36 +83,11 @@
 
 ## Project
 
-### Java
-  1. [피부과 예약 프로그램 (1.18 ~ 1.23 / 4일)](https://github.com/includesorrow/Java_SemiProject_Hospital)
+### [Java 기반 피부과 예약 프로그램 (1.18 ~ 1.23 / 4일)](https://github.com/includesorrow/Java_SemiProject_Hospital)
 
-### Spring
-  1. 영화 스트리밍 서비스 (3.8 ~ 4.2 / 18일)
-  
-### SPSS Modeler
-- 여성가족패널 출산력 데이터 분석
+### [Spring 기반 영화 스트리밍 서비스 (3.8 ~ 4.2 / 18일)](https://github.com/includesorrow/WAFLIX)
 
-- 직방
-
-### R
-
-- 직방
-
-
-
-### Python, Hadoop-Ecosystem 
-  1. Python
-  2. Hadoop-Ecosystem
-
-
-
-
-
-
-
-
-
-## test
+### [Hadoop Eco-System 기반 신용등급 확인 프로젝트 (5.28 ~ 6.21 / 15일)](https://github.com/includesorrow/Credit_Rating_Analysis_Project)
 
 
 
@@ -122,7 +98,3 @@
 
 
 
-
-
-
-g
