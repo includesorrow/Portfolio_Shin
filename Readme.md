@@ -51,6 +51,7 @@
   2. Pandas
   3. Numpy
   4. Matplotlib
+  5. Tensorflow / Keras
   
 ### R
   1. ggplot2
