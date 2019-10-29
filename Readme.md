@@ -38,9 +38,24 @@
 
 #### [Spring 기반 영화 스트리밍 서비스 (3.8 ~ 4.2 / 18일)](https://github.com/includesorrow/WAFLIX)
 
-#### [(작업중) Hadoop Eco-System 기반 신용등급 확인 프로젝트 (5.28 ~ 6.21 / 15일)](https://github.com/includesorrow/Credit_Rating_Analysis_Project)
+#### [Hadoop Eco-System 기반 신용등급 확인 프로젝트 (5.28 ~ 6.21 / 15일)](https://github.com/includesorrow/Credit_Rating_Analysis_Project)
 
+## 기술발표 PPT
 
+### Hadoop Eco-system PPT
+
+- 개인적으로 관심있어 하는 프레임워크이며, 
+
+- Hadoop Eco-system에 대해 학습한 내용을 바탕으로 PPT를 직접 만들었으며, 해당 PPT를 바탕으로 약 1시간동안 한국소프트웨어진흥협회에서 발표 및 질의응답까지 진행하였습니다. 
+
+- PPT 내용 :
+  하둡에 대한 이해
+  HDFS, MapReduce 아키텍쳐
+  하둡 1.X과 2.X의 차이
+  Flume, Hive, Spark 소개 및 아키텍처
+  Hadoop과 Spark의 차이
+  
+- 해당 PPT : [링크](https://github.com/includesorrow/Credit_Rating_Analysis_Project/files/3728951/%2B.Flume%2BHive%2BSpark._.pptx)
 
 
 ## Programming Language
