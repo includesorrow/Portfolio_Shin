@@ -90,18 +90,18 @@
 
 ### Hadoop Eco-system PPT
 
-- 개인적으로 관심있어 하는 프레임워크이며, 개인적으로 공부했던 내용을 바탕으로 공유차 작성하였습니다.
+#### 개인적으로 관심있어 하는 프레임워크이며, 개인적으로 공부했던 내용을 바탕으로 공유차 작성하였습니다.
 
-- 해당 PPT를 바탕으로 약 1시간동안 한국소프트웨어진흥협회에서 교육생들에게 발표 및 질의응답까지 진행하였습니다. 
+#### 해당 PPT를 바탕으로 약 1시간동안 한국소프트웨어진흥협회에서 교육생들에게 발표 및 질의응답까지 진행하였습니다. 
 
-- PPT 내용 :
+#### PPT 내용 
   하둡에 대한 이해
   HDFS, MapReduce 아키텍쳐
   하둡 1.X과 2.X의 차이
   Flume, Hive, Spark 소개 및 아키텍처
   Hadoop과 Spark의 차이
   
-- 해당 PPT : [링크](https://github.com/includesorrow/Credit_Rating_Analysis_Project/files/3728951/%2B.Flume%2BHive%2BSpark._.pptx)
+해당 PPT : [링크](https://github.com/includesorrow/Credit_Rating_Analysis_Project/files/3728951/%2B.Flume%2BHive%2BSpark._.pptx)
 
 
 
