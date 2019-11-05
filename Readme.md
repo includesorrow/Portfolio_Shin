@@ -41,7 +41,7 @@
 
 #### [Hadoop Eco-System 기반 신용등급 확인 프로젝트 (5.28 ~ 6.21 / 15일)](https://github.com/includesorrow/Credit_Rating_Analysis_Project)
 
-#### [작업중 / 화분 프로젝트 (8.16 ~ 8.30 / 14일)(https://github.com/includesorrow/Hwabon)
+#### [작업중 / 화분 프로젝트 (8.16 ~ 8.30 / 14일)](https://github.com/includesorrow/Hwabun)
 
 ## Programming Language
 - 사용해본 경험이 있는 언어 및 프레임워크, 패키지에 대한 리스트입니다.
