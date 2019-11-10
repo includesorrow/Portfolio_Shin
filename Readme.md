@@ -7,7 +7,7 @@
 2. [Project](#Project)
 3. [Programming Language](#Programming-Language)
 4. [기술발표 PPT](#기술발표-PPT)
-5. [워크숍](#워크숍)
+5. [참여한 행사](#참여한-)
 6. [마치며](#마치며)
 ## Introduction
 
@@ -24,7 +24,6 @@
 커피 한잔을 마셔야 머리가 돌아갈정도로 커피 중독자입니다.
 
 최근 기본기를 다시 다지고 있습니다.
-
 
 ## Contacts
 - 이메일 : includesorrow@gmail.com
@@ -104,7 +103,7 @@
   
 해당 PPT : [링크](https://github.com/includesorrow/Credit_Rating_Analysis_Project/files/3728951/%2B.Flume%2BHive%2BSpark._.pptx)
 
-## 워크숍
+## 참여한 행사
 
 1. DataBreak 2018: Hello Kaggler! (2018.10.7)
 - 주최기관 : KaggleBreak
