@@ -25,6 +25,8 @@
 
 최근 기본기를 다시 다지고 있습니다.
 
+맥 환경을 한번 공부하고 싶은데 돈과 시간 둘다 기회가 잘 없습니다 ㅠ
+
 ## Contacts
 - 이메일 : includesorrow@gmail.com
 - LinkedIn : 신동준
