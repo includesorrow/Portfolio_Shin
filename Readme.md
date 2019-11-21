@@ -2,14 +2,15 @@
 
 
 ## :book: Category
-0. [Introdiction](#Introduction)
+0. [소개](#소개)
 1. [Contacts](#Contacts)
-2. [Project](#Project)
-3. [Programming Language](#Programming-Language)
+2. [프로젝트](#프로젝트)
+3. [경험한 기술](#경험한-기술)
 4. [기술발표 PPT](#기술발표-PPT)
 5. [참여한 행사](#참여한-행사)
 6. [마치며](#마치며)
-## Introduction
+
+## 소개
 
 
 ![KakaoTalk_20190917_170232968](https://user-images.githubusercontent.com/35910177/65023070-13e5ca00-d96d-11e9-81e5-cedfca3925dd.jpg)
@@ -35,7 +36,7 @@
 
 
 
-## Project
+## 프로젝트
 
 #### [Java 기반 피부과 예약 프로그램 (1.18 ~ 1.23 / 4일)](https://github.com/includesorrow/Java_SemiProject_Hospital)
 
@@ -45,7 +46,7 @@
 
 #### [작업중 / 화분 프로젝트 (8.16 ~ 8.30 / 14일)](https://github.com/includesorrow/Hwabun)
 
-## Programming Language
+## 경험한 기술
 - 사용해본 경험이 있는 언어 및 프레임워크, 패키지에 대한 리스트입니다.
 
 ### Python
@@ -87,6 +88,10 @@
   2. Flume
   3. Hive
   4. Spark
+  
+### AWS
+  1. EC2
+  2. SageMaker
 
 ## 기술발표 PPT
 
