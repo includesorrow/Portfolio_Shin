@@ -38,7 +38,7 @@
 
 ## 프로젝트
 
-#### [Java 기반 피부과 예약 프로그램 (1.18 ~ 1.23 / 4일)](https://github.com/includesorrow/Java_SemiProject_Hospital)
+<!--#### [Java 기반 피부과 예약 프로그램 (1.18 ~ 1.23 / 4일)](https://github.com/includesorrow/Java_SemiProject_Hospital)-->
 
 #### [Spring 기반 영화 스트리밍 서비스 (3.8 ~ 4.2 / 18일)](https://github.com/includesorrow/WAFLIX)
 
