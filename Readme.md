@@ -38,13 +38,20 @@
 
 #### [Spring 기반 영화 스트리밍 서비스 (3.8 ~ 4.2 / 18일)](https://github.com/includesorrow/WAFLIX)
 
-#### [Hadoop Eco-System 기반 신용등급 확인 프로젝트 (5.28 ~ 6.21 / 15일)](https://github.com/includesorrow/Credit_Rating_Analysis_Project)
+#### Hadoop Eco-System 기반 신용등급 확인 프로젝트 (5.28 ~ 6.21 / 15일)
 
 #### [작업중 / 화분 프로젝트 (8.16 ~ 8.30 / 14일)](https://github.com/includesorrow/Hwabun)
 
 ## 경험한 기술
 - 사용해본 경험이 있는 언어 및 프레임워크, 패키지에 대한 리스트입니다.
 
+### Java
+  1. Spring
+  2. JSP
+  3. JQuery
+  4. MyBatis
+  5. RJava
+  
 ### Python
   1. Flask
   2. Pandas
@@ -57,15 +64,7 @@
   2. dplyr
   3. Rmarkdown
   4. Shiny
-  5. Machine Learning
 
-### Java
-  1. Spring
-  2. JSP
-  3. JQuery
-  4. MyBatis
-  5. RJava
-  
 ### HTML
   1. JQuery
   2. CSS
@@ -76,9 +75,7 @@
   2. MySQL
 
 ### Linux
-  1. CentOS
-  2. Ubuntu
- 
+
 ### Hadoop Eco-System
   1. Hadoop
   2. Flume
