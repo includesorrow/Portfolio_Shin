@@ -127,6 +127,16 @@
   7) From zero to Hero with Kafka Connect (Mark Teehan)
 - [행사링크](https://www.onoffmix.com/event/196156)
 
+4. 아파치 카프카 입문과 활용
+- 주최기관 : Tacademy
+- 내용
+  1) Kafka 기본개념 및 생태계
+  2) Kafka 설치, 실행, CLI
+  3) Kafka Producer application
+  4) Kafka Consumer application
+  5) Kafka 활용 실습
+- [강의링크](https://tacademy.skplanet.com/live/player/onlineLectureDetail.action?seq=183)
+
 ## 마치며
 
 ### 코드 기획에 큰 시간을 들이는 개발자입니다.
