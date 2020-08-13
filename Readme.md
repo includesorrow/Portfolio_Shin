@@ -40,7 +40,7 @@
 
 #### Hadoop Eco-System 기반 신용등급 확인 프로젝트 (5.28 ~ 6.21 / 15일)
 
-#### [작업중 / 화분 프로젝트 (8.16 ~ 8.30 / 14일)](https://github.com/includesorrow/Hwabun)
+#### [화분 프로젝트 (8.16 ~ 8.30 / 14일)](https://github.com/includesorrow/Hwabun)
 
 ## 경험한 기술
 - 사용해본 경험이 있는 언어 및 프레임워크, 패키지에 대한 리스트입니다.
