@@ -28,14 +28,19 @@
 
 <!--#### [Java 기반 피부과 예약 프로그램 (1.18 ~ 1.23 / 4일)](https://github.com/includesorrow/Java_SemiProject_Hospital)-->
 
-#### [Spring 기반 영화 스트리밍 서비스 (3.8 ~ 4.2 / 18일)](https://github.com/includesorrow/WAFLIX)
+#### [Spring 기반 영화 스트리밍 서비스 (2019.3.8 ~ 4.2 / 18일)](https://github.com/includesorrow/WAFLIX)
 
-#### Hadoop Eco-System 기반 신용등급 확인 프로젝트 (5.28 ~ 6.21 / 15일)
+#### Hadoop Eco-System 기반 신용등급 확인 프로젝트 (2019.5.28 ~ 6.21 / 15일)
 
-#### [화분 프로젝트 (8.16 ~ 8.30 / 14일)](https://github.com/includesorrow/Hwabun)
+#### [화분 프로젝트 (2019.8.16 ~ 8.30 / 14일)](https://github.com/includesorrow/Hwabun)
+
+#### [
+
+#### 
 
 ## 경험한 기술
 - 사용해본 경험이 있는 언어 및 프레임워크, 패키지에 대한 리스트입니다.
+- 자신있는 기술은 **Bold** 처리하였습니다.
 
 ### Java
   1. Spring
@@ -50,6 +55,8 @@
   3. Numpy
   4. Matplotlib
   5. Tensorflow / Keras
+  6. **BeautifulSoup
+  7. **Selenium
     
 ### HTML
   1. JQuery
@@ -73,6 +80,9 @@
 ### AWS
   1. EC2
   2. SageMaker
+  3. EMR
+
+
 
 ## 발표 PPT
 
