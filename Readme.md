@@ -26,6 +26,9 @@
 #### [메쉬코리아 (2020.10 ~ 2020.02](https://meshkorea.net/kr/index.html)
 
 
+
+
+
 ## 활동
 
 <!--#### [Java 기반 피부과 예약 프로그램 (1.18 ~ 1.23 / 4일)](https://github.com/includesorrow/Java_SemiProject_Hospital)-->
@@ -36,7 +39,7 @@
 
 #### [화분 프로젝트 (2019.8.16 ~ 8.30 / 14일)](https://github.com/includesorrow/Hwabun)
 
-
+#### (외주) 네이버스토어 데이터 크롤링
 
 
 
