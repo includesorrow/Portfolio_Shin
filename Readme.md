@@ -33,6 +33,7 @@
   - Python 
   - AWS EMR, RDS, S3
   - Airflow  
+  - Octoparse
 
 ## 활동
 
