@@ -5,7 +5,7 @@
 1. [Contacts](#Contacts)
 2. [경력](#경력)
 3. [활동](#경력)
-4. [참여한 행사](#참여한-행사)
+4. [교육](#참여한-행사)
 5. [발표 PPT](#발표-PPT)
 
 <!--## 소개-->
@@ -43,7 +43,7 @@
 
 
 
-## 참여한 행사
+<!--## 교육-->
 
 <!--1. DataBreak 2018: Hello Kaggler! (2018.10.7)
 - 주최기관 : KaggleBreak
@@ -67,7 +67,17 @@
   7) From zero to Hero with Kafka Connect (Mark Teehan)
 - [행사링크](https://www.onoffmix.com/event/196156)-->
 
-1. 아파치 카프카 입문과 활용
+1. 빅데이터 활용을 위한 DB관리
+
+2. 머신러닝 지식기반의 데이터 사이언티스트 과정
+- 기관 : KOSTA
+- 교육내용  
+  - Java, Spring, SQL, Python, Hadoop Eco-system
+- 프로젝트
+  - Spring 기반 영화 스트리밍 사이트
+  - Hadoop Eco-system 기반 신용등급 확인 프로젝트
+
+<!--3. 아파치 카프카 입문과 활용
 - 주최기관 : Tacademy
 - 내용
   1) Kafka 기본개념 및 생태계
@@ -76,21 +86,16 @@
   4) Kafka Consumer application
   5) Kafka 활용 실습
 - [강의링크](https://tacademy.skplanet.com/live/player/onlineLectureDetail.action?seq=183)
-
 ## 발표 PPT
-
 ### Hadoop Eco-system PPT
-
 - 데이터 엔지니어 기술에 관심이 생겨 개인적으로 공부했던 내용을 바탕으로 공유차 작성하였습니다.
-
 - PPT 내용 
 1. 하둡에 대한 이해
 2. HDFS, MapReduce 아키텍쳐
 3. 하둡 1.X과 2.X의 차이
 4. Flume, Hive, Spark 소개 및 아키텍처
 5. Hadoop과 Spark의 차이
-  
-해당 PPT : [링크](https://github.com/includesorrow/Credit_Rating_Analysis_Project/files/3728951/%2B.Flume%2BHive%2BSpark._.pptx)
+해당 PPT : [링크](https://github.com/includesorrow/Credit_Rating_Analysis_Project/files/3728951/%2B.Flume%2BHive%2BSpark._.pptx) -->
 
 
 
