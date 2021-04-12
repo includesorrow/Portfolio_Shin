@@ -23,11 +23,16 @@
 
 ## 경력
 
-#### [메쉬코리아 (2020.10 ~ 2020.02)](https://meshkorea.net/kr/index.html)
+#### [메쉬코리아 (2020.10 ~ 2021.02) Data Engineering팀](https://meshkorea.net/kr/index.html)
 
-
-
-
+##### 주요 업무
+- 프랜차이즈 정보 및 상점 정보 크롤링
+- 데이터 정제 업무
+- 크롤링 자동화를 위한 Airflow Dag 개발
+- 기술스택
+  - Python (BeautifulSoup, Selenium 등)
+  - AWS EMR, RDS, S3
+  - Airflow  
 
 ## 활동
 
