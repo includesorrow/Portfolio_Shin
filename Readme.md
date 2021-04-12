@@ -23,7 +23,7 @@
 
 ## 경력
 
-#### [메쉬코리아](https://meshkorea.net/kr/index.html)
+#### [메쉬코리아 (2020.10 ~ 2020.02](https://meshkorea.net/kr/index.html)
 
 
 ## 활동
@@ -35,7 +35,6 @@
 #### Hadoop Eco-System 기반 신용등급 확인 프로젝트 (2019.5.28 ~ 6.21 / 15일)
 
 #### [화분 프로젝트 (2019.8.16 ~ 8.30 / 14일)](https://github.com/includesorrow/Hwabun)
-
 
 
 
