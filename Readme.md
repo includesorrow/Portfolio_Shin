@@ -5,8 +5,8 @@
 1. [Contacts](#Contacts)
 2. [경력](#경력)
 3. [활동](#경력)
-4. [교육](#참여한-행사)
-5. [발표 PPT](#발표-PPT)
+<!--4. [교육](#참여한-행사)
+5. [발표 PPT](#발표-PPT)-->
 
 <!--## 소개-->
 
@@ -67,8 +67,7 @@
   7) From zero to Hero with Kafka Connect (Mark Teehan)
 - [행사링크](https://www.onoffmix.com/event/196156)-->
 
-1. 빅데이터 활용을 위한 DB관리
-
+<!--1. 빅데이터 활용을 위한 DB관리
 2. 머신러닝 지식기반의 데이터 사이언티스트 과정
 - 기관 : KOSTA
 - 교육내용  
