@@ -3,8 +3,8 @@
 
 ## :book: Category
 1. [Contacts](#Contacts)
-2. [활동](#활동)
-3. [경력](#경력)
+2. [경력](#경력)
+3. [활동](#경력)
 4. [참여한 행사](#참여한-행사)
 5. [발표 PPT](#발표-PPT)
 
@@ -21,6 +21,10 @@
 - 전화번호 : 010-5164-7769
 
 
+## 경력
+
+#### [메쉬코리아](https://meshkorea.net/kr/index.html)
+
 
 ## 활동
 
@@ -33,10 +37,6 @@
 #### [화분 프로젝트 (2019.8.16 ~ 8.30 / 14일)](https://github.com/includesorrow/Hwabun)
 
 
-
-## 경력
-
-#### [메쉬코리아](https://meshkorea.net/kr/index.html)
 
 
 
