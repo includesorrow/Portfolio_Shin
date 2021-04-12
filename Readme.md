@@ -5,7 +5,7 @@
 0. [소개](#소개)
 1. [Contacts](#Contacts)
 2. [프로젝트](#프로젝트)
-3. [경험한 기술](#경험한-기술)
+3. [경력](#경력)
 4. [기술발표 PPT](#기술발표-PPT)
 5. [참여한 행사](#참여한-행사)
 6. [마치며](#마치며)
@@ -24,7 +24,7 @@
 
 
 
-## 프로젝트
+## 팀 프로젝트
 
 <!--#### [Java 기반 피부과 예약 프로그램 (1.18 ~ 1.23 / 4일)](https://github.com/includesorrow/Java_SemiProject_Hospital)-->
 
@@ -34,53 +34,11 @@
 
 #### [화분 프로젝트 (2019.8.16 ~ 8.30 / 14일)](https://github.com/includesorrow/Hwabun)
 
-#### [
 
-#### 
 
-## 경험한 기술
-- 사용해본 경험이 있는 언어 및 프레임워크, 패키지에 대한 리스트입니다.
-- 자신있는 기술은 **Bold** 처리하였습니다.
+## 경력
 
-### Java
-  1. Spring
-  2. JSP
-  3. JQuery
-  4. MyBatis
-  5. RJava
-  
-### Python
-  1. Flask
-  2. Pandas
-  3. Numpy
-  4. Matplotlib
-  5. Tensorflow / Keras
-  6. **BeautifulSoup
-  7. **Selenium
-    
-### HTML
-  1. JQuery
-  2. CSS
-  3. JavaScript
-
-### SQL
-  1. OracleSQL
-  2. MySQL
-
-### Linux
-
-### R
-
-### Hadoop Eco-System
-  1. Hadoop
-  2. Flume
-  3. Hive
-  4. Spark
-  
-### AWS
-  1. EC2
-  2. SageMaker
-  3. EMR
+#### [메쉬코리아(2020.12 ~ 2021.03)]
 
 
 
