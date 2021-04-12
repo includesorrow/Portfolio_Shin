@@ -5,9 +5,8 @@
 1. [Contacts](#Contacts)
 2. [활동](#활동)
 3. [경력](#경력)
-4. [기술발표 PPT](#기술발표-PPT)
-5. [참여한 행사](#참여한-행사)
-6. [마치며](#마치며)
+4. [참여한 행사](#참여한-행사)
+5. [발표 PPT](#발표-PPT)
 
 <!--## 소개-->
 
@@ -41,22 +40,6 @@
 
 
 
-## 발표 PPT
-
-### Hadoop Eco-system PPT
-
-- 개인적으로 관심있어 하는 이며, 개인적으로 공부했던 내용을 바탕으로 공유차 작성하였습니다.
-
-- 해당 PPT를 바탕으로 약 1시간동안 한국소프트웨어진흥협회에서 교육생들에게 발표 및 질의응답까지 진행하였습니다. 
-
-- PPT 내용 
-1. 하둡에 대한 이해
-2. HDFS, MapReduce 아키텍쳐
-3. 하둡 1.X과 2.X의 차이
-4. Flume, Hive, Spark 소개 및 아키텍처
-5. Hadoop과 Spark의 차이
-  
-해당 PPT : [링크](https://github.com/includesorrow/Credit_Rating_Analysis_Project/files/3728951/%2B.Flume%2BHive%2BSpark._.pptx)
 
 ## 참여한 행사
 
@@ -92,21 +75,33 @@
   5) Kafka 활용 실습
 - [강의링크](https://tacademy.skplanet.com/live/player/onlineLectureDetail.action?seq=183)
 
-## 마치며
+## 발표 PPT
 
+### Hadoop Eco-system PPT
+
+- 개인적으로 관심있어 하는 이며, 개인적으로 공부했던 내용을 바탕으로 공유차 작성하였습니다.
+
+- 해당 PPT를 바탕으로 약 1시간동안 한국소프트웨어진흥협회에서 교육생들에게 발표 및 질의응답까지 진행하였습니다. 
+
+- PPT 내용 
+1. 하둡에 대한 이해
+2. HDFS, MapReduce 아키텍쳐
+3. 하둡 1.X과 2.X의 차이
+4. Flume, Hive, Spark 소개 및 아키텍처
+5. Hadoop과 Spark의 차이
+  
+해당 PPT : [링크](https://github.com/includesorrow/Credit_Rating_Analysis_Project/files/3728951/%2B.Flume%2BHive%2BSpark._.pptx)
+
+
+
+<!--## 마치며
 ### 코드 기획에 큰 시간을 들이는 개발자입니다.
-
 코드를 한번 만들고 지속해서 수정에 수정을 거듭하지 않고 일단 한번 깔끔하게 잘 만들어놓을려고 노력합니다.
-
 코드 리뷰를 좋아하며, 잘못된 부분이 있으면 고치고자 노력합니다.
-
 ### 작은 성취에도 행복해합니다.
-
 코드가 안되어서 뭐가 문제인지 한참 고민하다가 오타인 사실을 알아내도 행복해합니다.
-
 단 한줄이라도 정말 좋은 생각이였다고 생각되는 코드이면 뿌듯함이 오래갑니다. 
-
-또한 다른 사람들의 코드를 보면서 자신의 코드가 어느 부분이 단점인지 생각해봅니다.
+또한 다른 사람들의 코드를 보면서 자신의 코드가 어느 부분이 단점인지 생각해봅니다.-->
 
 
 
