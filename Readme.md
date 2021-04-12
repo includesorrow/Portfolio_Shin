@@ -30,7 +30,7 @@
 - 데이터 정제 업무
 - 크롤링 자동화를 위한 Airflow Dag 개발
 - 기술스택
-  - Python (BeautifulSoup, Selenium 등)
+  - Python 
   - AWS EMR, RDS, S3
   - Airflow  
 
