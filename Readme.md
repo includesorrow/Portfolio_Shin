@@ -23,7 +23,7 @@
 
 ## 경력
 
-#### [메쉬코리아 (2020.10 ~ 2020.02](https://meshkorea.net/kr/index.html)
+#### [메쉬코리아 (2020.10 ~ 2020.02)](https://meshkorea.net/kr/index.html)
 
 
 
