@@ -4,7 +4,7 @@
 ## :book: Category
 0. [소개](#소개)
 1. [Contacts](#Contacts)
-2. [프로젝트](#프로젝트)
+2. [](#활동)
 3. [경력](#경력)
 4. [기술발표 PPT](#기술발표-PPT)
 5. [참여한 행사](#참여한-행사)
@@ -24,7 +24,7 @@
 
 
 
-## 팀 프로젝트
+## 활동
 
 <!--#### [Java 기반 피부과 예약 프로그램 (1.18 ~ 1.23 / 4일)](https://github.com/includesorrow/Java_SemiProject_Hospital)-->
 
@@ -38,9 +38,8 @@
 
 ## 경력
 
-#### [메쉬코리아(2020.12 ~ 2021.03)](https://github.com/includesorrow/MeshKorea_)
+#### [메쉬코리아](https://meshkorea.net/kr/index.html)
 
-##### 진행했던프로젝트
 
 
 ## 발표 PPT
