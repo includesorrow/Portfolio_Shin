@@ -23,7 +23,7 @@
 
 ## 경력
 
-#### [메쉬코리아 (2020.10 ~ 2021.02) Data Engineering팀](https://meshkorea.net/kr/index.html)
+#### [메쉬코리아 Data Engineering팀 (2020.10 ~ 2021.02)](https://meshkorea.net/kr/index.html)
 
 ##### 주요 업무
 - 프랜차이즈 정보 및 상점 정보 크롤링
