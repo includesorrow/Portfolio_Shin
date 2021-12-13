@@ -15,10 +15,10 @@
 <!--산업공학과 출신이지만 외부 수업으로 IT를 배우고, 거기서 IT에 대해 큰 매력을 느껴 도전하고 있습니다.-->
 
 
-## Contacts
+<!--## Contacts
 - 이메일 : includesorrow@gmail.com
 - github : https://github.com/includesorrow
-- 전화번호 : 010-5164-7769
+- 전화번호 : 010-5164-7769-->
 
 
 ## 경력
