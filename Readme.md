@@ -2,9 +2,9 @@
 
 
 ## :book: Category
-<!--1. [Contacts](#Contacts)-->
-1. [경력](#경력)
-2. [활동](#경력)
+1. [Contacts](#Contacts)
+2. [경력](#경력)
+3. [활동](#경력)
 <!--4. [교육](#참여한-행사)
 5. [발표 PPT](#발표-PPT)-->
 
@@ -15,10 +15,10 @@
 <!--산업공학과 출신이지만 외부 수업으로 IT를 배우고, 거기서 IT에 대해 큰 매력을 느껴 도전하고 있습니다.-->
 
 
-<!--## Contacts
+## Contacts
 - 이메일 : includesorrow@gmail.com
 - github : https://github.com/includesorrow
-- 전화번호 : 010-5164-7769-->
+- 전화번호 : 010-5164-7769
 
 
 ## 경력
