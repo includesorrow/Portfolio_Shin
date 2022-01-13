@@ -49,6 +49,9 @@
 
 #### [화분 프로젝트 (2019.08 ~ 2019.08 / 14일)](https://github.com/includesorrow/Hwabun)
 
+## 기술블로그(개인블로그?)(https://includesorrow.tistory.com/)
+
+
 
 <!--## 교육-->
 
