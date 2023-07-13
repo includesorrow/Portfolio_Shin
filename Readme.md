@@ -39,7 +39,7 @@
 
 - 네이버 스토어 데이터 크롤링 등 외주 4건 진행 (2020 ~ 2021)
 
-## 활동
+## 대학교 활동
 
 <!--#### [Java 기반 피부과 예약 프로그램 (1.18 ~ 1.23 / 4일)](https://github.com/includesorrow/Java_SemiProject_Hospital)-->
 
