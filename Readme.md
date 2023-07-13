@@ -23,6 +23,20 @@
 
 ## 경력
 
+#### [라텔앤드파트너즈 ML팀 (2022.01 ~ 현재)](https://heyratel.com/)
+
+##### 주식 프로젝트
+링크 : 
+
+#### [트릿지 Data팀 (2021.10 ~ 2021.12)](https://www.tridge.com/ko/)
+
+##### 주요 업무
+- 무역 데이터 정보 크롤링
+- 데이터 정제
+- 기술스텍
+  - node.js
+  - javascript
+
 #### [메쉬코리아 Data Engineering팀 (2020.10 ~ 2021.02)](https://meshkorea.net/kr/index.html)
 
 ##### 주요 업무
@@ -33,7 +47,6 @@
   - Python 
   - AWS EMR, RDS, S3
   - Airflow  
-  - Octoparse
 
 #### 외주활동
 
