@@ -25,6 +25,8 @@
 
 #### [라텔앤드파트너즈 ML팀 (2022.01 ~ 현재)](https://heyratel.com/)
 
+#### Data Engineer
+
 ##### 주요 업무
 - 데이터 수집
    - 30여개의 사이트에서 데이터 수집 개발 및 자동화
@@ -37,6 +39,12 @@
    - Python3
    - AWS
    - Airlfow, EKS, Kafka
+
+#### 아큐브 DBA Assist
+
+##### 주요 업무
+- 아큐브 정기 Report 데이터 추출
+- 아큐브 CS 업무 지원
 
 #### [트릿지 Data팀 (2021.10 ~ 2021.12)](https://www.tridge.com/ko/)
 
