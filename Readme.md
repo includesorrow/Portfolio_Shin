@@ -25,17 +25,18 @@
 
 #### [라텔앤드파트너즈 ML팀 (2022.01 ~ 현재)](https://heyratel.com/)
 
-#### 주식 프로젝트
-
 ##### 주요 업무
-- 주식 관련 데이터 크롤링
+- 데이터 수집
+   - 30여개의 사이트에서 데이터 크롤링 자동화
+   - 일간 10만건의 데이터 수집
 - 데이터 파이프라인 구축
-- 데이터 정제
-- Airflow 및 EKS 유지보수
+   - Airflow 구축 및 유지보수
+   - EKS, Kafka 유지보수
+   - 데이터 정제 및 저장, 데이터 파이프라인 이슈 트래킹
 - 기술스텍
+   - Python3
    - AWS
-   - Python, Airlfow
-   - EKS
+   - Airlfow, EKS, Kafka
 
 #### [트릿지 Data팀 (2021.10 ~ 2021.12)](https://www.tridge.com/ko/)
 
@@ -49,7 +50,7 @@
 #### [메쉬코리아 Data Engineering팀 (2020.10 ~ 2021.02)](https://meshkorea.net/kr/index.html)
 
 ##### 주요 업무
-- 프랜차이즈 정보 및 상점 정보 크롤링 
+- 상점 정보 크롤링 
 - 데이터 정제 업무
 - 크롤링 자동화를 위한 Airflow Dag 개발
 - 기술스택
