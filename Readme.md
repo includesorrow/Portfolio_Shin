@@ -67,13 +67,13 @@
 
 <!--#### [Java 기반 피부과 예약 프로그램 (1.18 ~ 1.23 / 4일)](https://github.com/includesorrow/Java_SemiProject_Hospital)-->
 
-#### [Spring 기반 영화 스트리밍 서비스 (2019.03 ~ 2019.04 / 18일)](https://github.com/includesorrow/WAFLIX)
+- [Spring 기반 영화 스트리밍 서비스 (2019.03 ~ 2019.04 / 18일)](https://github.com/includesorrow/WAFLIX)
 
-#### Hadoop Eco-System 기반 신용등급 확인 프로젝트 (2019.05 ~ 2019.06 / 15일)
+- Hadoop Eco-System 기반 신용등급 확인 프로젝트 (2019.05 ~ 2019.06 / 15일)
 
-#### [화분 프로젝트 (2019.08 ~ 2019.08 / 14일)](https://github.com/includesorrow/Hwabun)
+- [화분 프로젝트 (2019.08 ~ 2019.08 / 14일)](https://github.com/includesorrow/Hwabun)
 
-## 기술블로그(개인블로그?)(https://includesorrow.tistory.com/)
+<!-- ## 기술블로그(개인블로그?)(https://includesorrow.tistory.com/)-->
 
 
 
