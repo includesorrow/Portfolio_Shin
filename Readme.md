@@ -60,8 +60,10 @@
 
 ## Communities
 
-#### 외주활동
+### 외주활동
 - 데이터 수집 외주활동 8건 진행
+
+### 개발 공부
 
 <!--#### [Java 기반 피부과 예약 프로그램 (1.18 ~ 1.23 / 4일)](https://github.com/includesorrow/Java_SemiProject_Hospital)-->
 
