@@ -1,10 +1,10 @@
 # 데이터 엔지니어 신동준입니다.
 
 
-## :book: Category
+## Category
 1. [Contacts](#Contacts)
-2. [경력](#경력)
-3. [활동](#경력)
+2. [Experiences](#Experiences)
+3. [Communities](#Communities)
 <!--4. [교육](#참여한-행사)
 5. [발표 PPT](#발표-PPT)-->
 
@@ -21,7 +21,7 @@
 - 전화번호 : 010-5164-7769
 
 
-## 경력
+## Experiences
 
 #### [라텔앤드파트너즈 ML팀 (2022.01 ~ 현재)](https://heyratel.com/)
 
@@ -58,11 +58,10 @@
   - AWS EMR, RDS, S3
   - Airflow  
 
+## Communities
+
 #### 외주활동
-
-- 네이버 스토어 데이터 크롤링 등 외주 4건 진행 (2020 ~ 2021)
-
-## 대학교 활동
+- 데이터 수집 외주활동 8건 진행
 
 <!--#### [Java 기반 피부과 예약 프로그램 (1.18 ~ 1.23 / 4일)](https://github.com/includesorrow/Java_SemiProject_Hospital)-->
 
