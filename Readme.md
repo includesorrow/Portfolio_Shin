@@ -25,7 +25,7 @@
 
 #### [라텔앤드파트너즈 ML팀 (2022.01 ~ 현재)](https://heyratel.com/)
 
-#### Data Engineer ([링크](
+#### Data Engineer ([링크](https://github.com/includesorrow/rt))
 
 ##### 주요 업무
 - 데이터 수집
