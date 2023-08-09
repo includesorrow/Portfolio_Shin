@@ -20,17 +20,6 @@
 - github : https://github.com/includesorrow
 - 전화번호 : 010-5164-7769
 
-## 보유 기술
-Language : Python3
-Stacks : C#, Editor, Cinemachine, Timeline
-Utility : Spine, LitJson
-Git
-Git : GitHub
-Utility : SourceTree, Git Desktop
-Test Framework
-Unity Test Framework
-Test Driven Develop
-
 
 ## Experiences
 
