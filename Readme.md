@@ -2,9 +2,9 @@
 
 
 ## Category
-1. [Contacts]
-2. [Experiences]
-3. [Communities]
+1. Contacts
+2. Experiences
+3. Communities
 <!--4. [교육](#참여한-행사)
 5. [발표 PPT](#발표-PPT)-->
 
