@@ -24,7 +24,25 @@
 
 ## Experiences
 
-#### [라텔앤드파트너즈 ML팀 (2022.01 ~ 현재)](https://heyratel.com/)
+#### [올라핀테크 데이터 엔지니어링팀 (2023.10 ~ 현재)](https://www.allra.co.kr/)
+
+#### Data Engineer
+
+##### 주요 업무
+- 데이터 수집
+   - 30여개의 사이트에서 데이터 수집 개발 및 자동화
+   - 일간 10만건의 데이터 수집
+- 데이터 파이프라인 구축
+   - Airflow 구축 및 유지보수
+   - EKS, Kafka 유지보수
+   - 데이터 정제 및 저장, 데이터 파이프라인 이슈 트래킹
+- 기술스텍
+   - Python3
+   - AWS
+   - Airlfow, EKS, Kaf
+ 
+   - 
+#### [라텔앤드파트너즈 ML팀 (2022.01 ~ 2023.10)](https://heyratel.com/)
 
 #### Data Engineer ([링크](https://github.com/includesorrow/rt))
 
