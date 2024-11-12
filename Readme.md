@@ -16,10 +16,12 @@
 
 
 ## Contacts
+<!--
 - 이메일 : includesorrow@gmail.com
+- 전화번호 : 010-5164-7769
+!-->
 - github : https://github.com/includesorrow
 - blog : https://includesorrow.tistory.com/
-- 전화번호 : 010-5164-7769
 
 
 ## Experiences
