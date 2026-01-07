@@ -35,7 +35,7 @@ Python과 Airflow 등을 활용하여 효율적이고 신뢰성 있는 데이터
 
 ## Experiences
 
-#### [올라핀테크 데이터 엔지니어링팀 (2023.10 ~ 현재)](https://www.allra.co.kr/)
+#### [올라핀테크 데이터 엔지니어링팀 (2023.10 ~ 2025.02)](https://www.allra.co.kr/)
 
 #### Data Engineer, 재직
 
